@@ -1,13 +1,14 @@
 ---
-title: Big Proppa Live
-emoji: 🔥
-colorFrom: indigo
-colorTo: gray
+title: Big Proppa
+emoji: 🏈
+colorFrom: yellow
+colorTo: purple
 sdk: gradio
-sdk_version: 6.30.0
-python_version: '3.13'
+python_version: "3.11"
 app_file: app.py
 pinned: false
 ---
+# HEY BIG PROPPA!
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+Gradio-SDK Space in raw mode. Serves the React + React Flow app exactly as built from
+`frontend/`; no Gradio UI is shown. Source of truth: github.com/tyronne-os/Hey-Big-Proppa.

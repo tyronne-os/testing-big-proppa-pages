@@ -33,3 +33,13 @@ saved_model/**/* filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.zst filter=lfs diff=lfs merge=lfs -text
 *tfevents* filter=lfs diff=lfs merge=lfs -text
+frontend/dist/big-proppa.png filter=lfs diff=lfs merge=lfs -text
+frontend/dist/home/109.jpg filter=lfs diff=lfs merge=lfs -text
+frontend/dist/home/110.jpg filter=lfs diff=lfs merge=lfs -text
+frontend/dist/home/big-proppa.png filter=lfs diff=lfs merge=lfs -text
+frontend/dist/my-boo.png filter=lfs diff=lfs merge=lfs -text
+frontend/dist/myboo-avatar.jpg filter=lfs diff=lfs merge=lfs -text
+frontend/dist/myboo-avatar2.jpg filter=lfs diff=lfs merge=lfs -text
+landing/109.jpg filter=lfs diff=lfs merge=lfs -text
+landing/110.jpg filter=lfs diff=lfs merge=lfs -text
+landing/big-proppa.png filter=lfs diff=lfs merge=lfs -text
