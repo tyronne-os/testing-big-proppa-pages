@@ -43,3 +43,4 @@ frontend/dist/myboo-avatar2.jpg filter=lfs diff=lfs merge=lfs -text
 landing/109.jpg filter=lfs diff=lfs merge=lfs -text
 landing/110.jpg filter=lfs diff=lfs merge=lfs -text
 landing/big-proppa.png filter=lfs diff=lfs merge=lfs -text
+frontend/dist/boo-cutout-v7.png filter=lfs diff=lfs merge=lfs -text
