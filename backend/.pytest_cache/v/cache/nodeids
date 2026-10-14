@@ -1,0 +1,6 @@
+[
+  "tests/test_multiverse.py::test_deterministic_and_vig_sane",
+  "tests/test_multiverse.py::test_no_lookahead_in_prop_lines",
+  "tests/test_multiverse.py::test_rules_block_illegal_combos",
+  "tests/test_multiverse.py::test_sgp_haircut_applies_to_correlated_legs"
+]
