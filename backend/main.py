@@ -1618,6 +1618,124 @@ def api_matchup(game_id: str | None = None, day: str = "thursday"):
                                                 info.get("away_qb_name", ""), info.get("home_qb_name", ""))}
 
 
+@app.get("/api/jimmy/seasons")
+def api_jimmy_seasons():
+    return {"seasons": [2024, 2025]}
+
+
+def _jimmy(sid: str):
+    from jimmy_backtester import get_session
+    bt = get_session(sid)
+    if bt is None:
+        raise HTTPException(404, "Season not found. Start a new one.")
+    return bt
+
+
+@app.post("/api/jimmy/start")
+def api_jimmy_start(year: int, slips_per_week: int):
+    from jimmy_backtester import new_session
+    if year not in (2024, 2025):
+        raise HTTPException(400, "Only 2024 and 2025 supported")
+    if not 1 <= slips_per_week <= 5:
+        raise HTTPException(400, "Must select 1-5 slips per week")
+    sid, bt = new_session(year, slips_per_week)
+    return {"session_id": sid, **bt.get_state_dict()}
+
+
+@app.get("/api/jimmy/session/{sid}")
+def api_jimmy_session(sid: str):
+    return {"session_id": sid, **_jimmy(sid).get_state_dict()}
+
+
+@app.get("/api/jimmy/board/{sid}")
+def api_jimmy_board(sid: str):
+    import jimmy_history
+    bt = _jimmy(sid)
+    return {"week": bt.state.current_week, "props": jimmy_history.board(bt.year, bt.state.current_week)}
+
+
+@app.post("/api/jimmy/submit/{sid}")
+def api_jimmy_submit(sid: str, body: dict):
+    import jimmy_history
+    from jimmy_backtester import Leg
+    bt = _jimmy(sid)
+    legs = []
+    for l in body.get("legs") or []:
+        if l.get("prop_type") not in jimmy_history.PROPS:
+            raise HTTPException(400, "Unknown prop type")
+        meta = jimmy_history.player(bt.year, str(l.get("player_id")))
+        legs.append(Leg(str(l["player_id"]), meta["name"], str(l.get("team") or meta["team"]), l["prop_type"],
+                        float(l["line"]), bool(l.get("is_over", True)), float(l.get("confidence", 50)) / 100,
+                        headshot=meta["headshot"]))
+    try:
+        slip = bt.submit_slip(legs)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    return {"slip": bt._serialize_slip(slip), "state": {"session_id": sid, **bt.get_state_dict()}}
+
+
+@app.get("/api/jimmy/recap/{sid}/{week}")
+def api_jimmy_recap(sid: str, week: int):
+    from jimmy_recap import generate_weekly_recap
+    return generate_weekly_recap(_jimmy(sid), week)
+
+
+@app.post("/api/jimmy/tail/{sid}")
+def api_jimmy_tail(sid: str, body: dict):
+    bt = _jimmy(sid)
+    try:
+        bt.tail(str(body.get("host")))
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    return {"session_id": sid, **bt.get_state_dict()}
+
+
+@app.post("/api/jimmy/advance/{sid}")
+def api_jimmy_advance(sid: str):
+    bt = _jimmy(sid)
+    try:
+        bt.advance_week()
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    return {"session_id": sid, **bt.get_state_dict()}
+
+
+@app.post("/api/jimmy/booth/prewarm/{sid}/{week}")
+def api_jimmy_booth_prewarm(sid: str, week: int):
+    """Synthesize a week's whole conversation in the background so playback never waits on the model."""
+    import threading
+    import booth_voice
+    from jimmy_recap import generate_weekly_recap
+    recap = generate_weekly_recap(_jimmy(sid), week)
+    turns = recap.get("turns") or []
+
+    def run():
+        for t in turns:
+            try:
+                booth_voice.clip(t["speaker"], t["text"])
+            except booth_voice.VoiceUnavailable:
+                return
+
+    threading.Thread(target=run, daemon=True).start()
+    return {"week": week, "turns": len(turns), "status": "warming"}
+
+
+@app.post("/api/jimmy/voice")
+def api_jimmy_voice(body: dict):
+    """One booth line as WAV. Cached by host and text, so replays cost nothing."""
+    import booth_voice
+    from fastapi.responses import FileResponse
+    text = str(body.get("text") or "").strip()[:600]
+    host = str(body.get("host") or "")
+    if not text or host not in booth_voice.VOICES:
+        raise HTTPException(400, "Need a booth host and a line of text")
+    try:
+        path = booth_voice.clip(host, text)
+    except booth_voice.VoiceUnavailable as e:
+        raise HTTPException(503, str(e))
+    return FileResponse(str(path), media_type="audio/wav", headers={"Cache-Control": "public, max-age=86400"})
+
+
 # React app still accessible at /app/* via the StaticFiles mount below.
 from fastapi.responses import FileResponse as _FileResponse
 
