@@ -1,4 +1,11 @@
 [
+  "tests/test_betterverse.py::test_deterministic_and_vig_sane",
+  "tests/test_betterverse.py::test_leaderboard_ranks_by_proof_and_flags_provisional",
+  "tests/test_betterverse.py::test_no_lookahead_in_prop_lines",
+  "tests/test_betterverse.py::test_roster_has_usernames_tiers_and_rules",
+  "tests/test_betterverse.py::test_rules_block_illegal_combos",
+  "tests/test_betterverse.py::test_sgp_haircut_applies_to_correlated_legs",
+  "tests/test_betterverse.py::test_sharps_never_use_the_week_they_bet",
   "tests/test_multiverse.py::test_deterministic_and_vig_sane",
   "tests/test_multiverse.py::test_no_lookahead_in_prop_lines",
   "tests/test_multiverse.py::test_rules_block_illegal_combos",
