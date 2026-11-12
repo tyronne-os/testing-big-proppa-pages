@@ -11,7 +11,7 @@
   ],
   "name": "Aaron Rodgers",
   "playerId": "00-0023459",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Aaron Rodgers (PIT), pass yds, at CIN, a soft run-fit defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Lake 232.5 vs book 216.5 \u2014 7.4% dayligh\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Aaron Rodgers (PIT), pass yds, at CIN, a soft run-fit defense. Lake 232.5 vs book 216.5 \u2014 7.4% daylight, over.",
   "redFlags": []
  },
  "00-0025565": {
@@ -63,15 +63,14 @@
   "redFlags": []
  },
  "00-0028986": {
-  "composite": -0.115,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0028986",
   "playerId": "00-0028986",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0028986 (CHI), pass yds, at NO, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0029604": {
@@ -129,14 +128,14 @@
   "redFlags": []
  },
  "00-0029822": {
-  "composite": 0.26,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0029822",
   "playerId": "00-0029822",
-  "prediction": "I'm on 00-0029822 over. That's my number. 00-0029822 (LA), pass yds, at ARI, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0029892": {
@@ -257,15 +256,14 @@
   "redFlags": []
  },
  "00-0031236": {
-  "composite": 0.254,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0031236",
   "playerId": "00-0031236",
-  "prediction": "I'm on 00-0031236 over. That's my number. 00-0031236 (SF), pass yds, at DAL, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0031279": {
@@ -321,7 +319,7 @@
   ],
   "name": "Davante Adams",
   "playerId": "00-0031381",
-  "prediction": "I'm on Davante Adams over. That's my number. Davante Adams (LA), rec yds, at ARI, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 39 stinker. Lake\u2026",
+  "prediction": "I'm on Davante Adams over. That's my number. Davante Adams (LA), rec yds, at ARI, a defense you can run a truck through. Lake 59 vs book 62.5 \u2014 5.6% daylight, under.",
   "redFlags": []
  },
  "00-0031408": {
@@ -366,7 +364,7 @@
   ],
   "name": "Jameis Winston",
   "playerId": "00-0031503",
-  "prediction": "Put your neck out \u2014 Jameis Winston's going over. Jameis Winston (NYG), pass yds, at WAS, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 71 stinker\u2026",
+  "prediction": "Put your neck out \u2014 Jameis Winston's going over. Jameis Winston (NYG), pass yds, at WAS, a defense you can run a truck through. Lake 157.5 vs book 208.5 \u2014 24.5% daylight, under.",
   "redFlags": []
  },
  "00-0031565": {
@@ -426,7 +424,7 @@
   ],
   "name": "Darren Waller",
   "playerId": "00-0031610",
-  "prediction": "I'm on Darren Waller over. That's my number. Darren Waller (CAR), rec yds, at NO, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 31 vs book 26.5 \u2014 8.8% d\u2026",
+  "prediction": "I'm on Darren Waller over. That's my number. Darren Waller (CAR), rec yds, at NO, a defense that brings real resistance. Lake 31 vs book 26.5 \u2014 8.8% daylight, over.",
   "redFlags": []
  },
  "00-0031898": {
@@ -531,7 +529,7 @@
   ],
   "name": "Marcus Mariota",
   "playerId": "00-0032268",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Marcus Mariota (WAS), pass yds, at NYG, a defense that brings real resistance. 1-for-3 \u2014 the number hugs him worse than the stat sheet. Last week wa\u2026",
+  "prediction": "The only angle here is the under. Marcus Mariota (WAS), pass yds, at NYG, a defense that brings real resistance. Lake 133.5 vs book 212.5 \u2014 37.2% daylight, under.",
   "redFlags": []
  },
  "00-0032378": {
@@ -546,14 +544,14 @@
   "redFlags": []
  },
  "00-0032385": {
-  "composite": 0.068,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "usage"
+   "unknown name"
   ],
   "name": "00-0032385",
   "playerId": "00-0032385",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0032385 (NYJ), pass yds, at BUF, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0032387": {
@@ -615,7 +613,7 @@
   ],
   "name": "Kalif Raymond",
   "playerId": "00-0032464",
-  "prediction": "Bash the under. The books haven't moved it enough. Kalif Raymond (CHI), rec yds, at NO, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 23 vs book 31.5 \u2014 2\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Kalif Raymond (CHI), rec yds, at NO, a defense that brings real resistance. Lake 23 vs book 31.5 \u2014 27% daylight, under.",
   "redFlags": []
  },
  "00-0032569": {
@@ -686,7 +684,7 @@
   ],
   "name": "Derrick Henry",
   "playerId": "00-0032764",
-  "prediction": "Lean under. Not a lock. A lean. Derrick Henry (BAL), rush yds, at LAC, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 57 stinker. Lake 68 vs book 83.5 \u2014 18.6% day\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Derrick Henry (BAL), rush yds, at LAC, an average defense. Lake 68 vs book 83.5 \u2014 18.6% daylight, under.",
   "redFlags": []
  },
  "00-0032775": {
@@ -779,14 +777,16 @@
   "redFlags": []
  },
  "00-0033077": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": -0.247,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "last five",
+   "usage"
   ],
   "name": "Dak Prescott",
   "playerId": "00-0033077",
-  "prediction": "No play. Dak Prescott is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Lean under. Not a lock. A lean. Dak Prescott (DAL), rush yds, at SF, a defense that brings real resistance. Lake 9 vs book 9.5 \u2014 14.3% daylight, under.",
   "redFlags": []
  },
  "00-0033090": {
@@ -801,7 +801,7 @@
   ],
   "name": "Hunter Henry",
   "playerId": "00-0033090",
-  "prediction": "Put your neck out \u2014 Hunter Henry's going over. Hunter Henry (NE), rec yds, at DET, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 41.5 vs book 31.5 \u2014 31.\u2026",
+  "prediction": "Put your neck out \u2014 Hunter Henry's going over. Hunter Henry (NE), rec yds, at DET, a defense you can run a truck through. Lake 41.5 vs book 31.5 \u2014 31.7% daylight, over.",
   "redFlags": []
  },
  "00-0033093": {
@@ -849,18 +849,21 @@
   ],
   "name": "Tyler Higbee",
   "playerId": "00-0033110",
-  "prediction": "I'm on Tyler Higbee over. That's my number. Tyler Higbee (LA), rec yds, at ARI, a defense you can run a truck through. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 13 stinker. Lake\u2026",
+  "prediction": "I'm on Tyler Higbee over. That's my number. Tyler Higbee (LA), rec yds, at ARI, a defense you can run a truck through. Lake 28 vs book 23.5 \u2014 24.4% daylight, over.",
   "redFlags": []
  },
  "00-0033119": {
-  "composite": 0.0,
+  "composite": -0.109,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Jacoby Brissett",
   "playerId": "00-0033119",
-  "prediction": "No play. Jacoby Brissett is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the over. Jacoby Brissett (ARI), rush yds, at LA, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Lake 10 vs book 7.5 \u2014 33.3% daylight, over.",
   "redFlags": []
  },
  "00-0033120": {
@@ -893,14 +896,14 @@
   "redFlags": []
  },
  "00-0033217": {
-  "composite": -0.008,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "projection"
+   "unknown name"
   ],
   "name": "00-0033217",
   "playerId": "00-0033217",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0033217 (IND), pass yds, at MIA, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0033269": {
@@ -923,7 +926,7 @@
   ],
   "name": "Christian McCaffrey",
   "playerId": "00-0033280",
-  "prediction": "I'm on Christian McCaffrey over. That's my number. Christian McCaffrey (SF), rush yds, at DAL, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 56.5 vs book 65\u2026",
+  "prediction": "I'm on Christian McCaffrey over. That's my number. Christian McCaffrey (SF), rush yds, at DAL, a defense you can run a truck through. Lake 56.5 vs book 65.5 \u2014 13.7% daylight, under.",
   "redFlags": []
  },
  "00-0033281": {
@@ -948,7 +951,7 @@
   ],
   "name": "George Kittle",
   "playerId": "00-0033288",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. George Kittle (SF), rec yds, at DAL, a soft run-fit defense. 3-for-5 lately. He owes nobody. Lake 52 vs book 64.5 \u2014 18.1% daylight, under.",
+  "prediction": "The only angle here is the under. George Kittle (SF), rec yds, at DAL, a soft run-fit defense. 3-for-5 lately. He owes nobody. Lake 52 vs book 64.5 \u2014 18.1% daylight, under.",
   "redFlags": []
  },
  "00-0033290": {
@@ -973,7 +976,7 @@
   ],
   "name": "Aaron Jones",
   "playerId": "00-0033293",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Aaron Jones (MIN), rush yds, at GB, a soft run-fit defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 16 stinker. Lake 46 vs book 6\u2026",
+  "prediction": "The only angle here is the under. Aaron Jones (MIN), rush yds, at GB, a soft run-fit defense. Lake 46 vs book 67.5 \u2014 31.9% daylight, under.",
   "redFlags": []
  },
  "00-0033294": {
@@ -1085,18 +1088,20 @@
   ],
   "name": "Samaje Perine",
   "playerId": "00-0033526",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Samaje Perine (CIN), rush yds, at PIT, an average defense. 3-for-5 lately. He owes nobody. Lake 22.5 vs book 13.5 \u2014 66.7% daylight, over.",
+  "prediction": "The only angle here is the over. Samaje Perine (CIN), rush yds, at PIT, an average defense. 3-for-5 lately. He owes nobody. Lake 22.5 vs book 13.5 \u2014 66.7% daylight, over.",
   "redFlags": []
  },
  "00-0033537": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": -0.39,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "usage",
+   "red zone"
   ],
   "name": "Deshaun Watson",
   "playerId": "00-0033537",
-  "prediction": "No play. Deshaun Watson is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Lean under. Not a lock. A lean. Deshaun Watson (CLE), rush yds, at HOU, an elite, legit defense. Lake 21 vs book 27.5 \u2014 26.3% daylight, under.",
   "redFlags": []
  },
  "00-0033546": {
@@ -1147,16 +1152,14 @@
   "redFlags": []
  },
  "00-0033699": {
-  "composite": 0.254,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage",
-   "red zone"
+   "unknown name"
   ],
   "name": "00-0033699",
   "playerId": "00-0033699",
-  "prediction": "I'm on 00-0033699 over. That's my number. 00-0033699 (WAS), rush yds, at NYG, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0033787": {
@@ -1171,25 +1174,28 @@
   "redFlags": []
  },
  "00-0033862": {
-  "composite": 0.327,
-  "confidence": "medium",
-  "drivers": [
-   "matchup"
-  ],
-  "name": "00-0033862",
-  "playerId": "00-0033862",
-  "prediction": "I'm on 00-0033862 over. That's my number. 00-0033862 (MIA), pass yds, at IND, a defense you can run a truck through.",
-  "redFlags": []
- },
- "00-0033873": {
   "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "unknown name"
+  ],
+  "name": "00-0033862",
+  "playerId": "00-0033862",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
+  "redFlags": []
+ },
+ "00-0033873": {
+  "composite": -0.343,
+  "confidence": "medium",
+  "drivers": [
+   "matchup",
+   "last five",
+   "projection",
+   "usage"
   ],
   "name": "Patrick Mahomes",
   "playerId": "00-0033873",
-  "prediction": "No play. Patrick Mahomes is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Lean under. Not a lock. A lean. Patrick Mahomes (KC), rush yds, at ATL, a defense that brings real resistance. Lake 12.5 vs book 15.5 \u2014 19.4% daylight, under.",
   "redFlags": []
  },
  "00-0033881": {
@@ -1225,7 +1231,7 @@
   ],
   "name": "Alvin Kamara",
   "playerId": "00-0033906",
-  "prediction": "I'm on Alvin Kamara over. That's my number. Alvin Kamara (NO), rush yds, at CAR, a defense you can run a truck through. Putrid \u2014 0-for-5. He's cost you dinner twice. Lake 26.5 vs book 36.5 \u2014 29.3%\u2026",
+  "prediction": "I'm on Alvin Kamara over. That's my number. Alvin Kamara (NO), rush yds, at CAR, a defense you can run a truck through. Lake 26.5 vs book 36.5 \u2014 29.3% daylight, under.",
   "redFlags": []
  },
  "00-0033908": {
@@ -1252,7 +1258,7 @@
   ],
   "name": "Chris Godwin Jr.",
   "playerId": "00-0033921",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Chris Godwin Jr. (TB), rec yds, at DET, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 16 stinker\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Chris Godwin Jr. (TB), rec yds, at DET, a defense you can run a truck through. Lake 30.5 vs book 27.5 \u2014 10.9% daylight, over.",
   "redFlags": []
  },
  "00-0034161": {
@@ -1323,7 +1329,7 @@
   ],
   "name": "Dalton Schultz",
   "playerId": "00-0034383",
-  "prediction": "Bash the under. The books haven't moved it enough. Dalton Schultz (HOU), rec yds, at CLE, an average defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Lake 37 vs book 40.5 \u2014 10.8% daylight, un\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Dalton Schultz (HOU), rec yds, at CLE, an average defense. Lake 37 vs book 40.5 \u2014 10.8% daylight, under.",
   "redFlags": []
  },
  "00-0034613": {
@@ -1373,14 +1379,17 @@
   "redFlags": []
  },
  "00-0034796": {
-  "composite": 0.0,
+  "composite": -0.125,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "last five",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Lamar Jackson",
   "playerId": "00-0034796",
-  "prediction": "No play. Lamar Jackson is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the under. Lamar Jackson (BAL), rush yds, at LAC, an average defense. Lake 23.5 vs book 31.5 \u2014 27.7% daylight, under.",
   "redFlags": []
  },
  "00-0034827": {
@@ -1393,7 +1402,7 @@
   ],
   "name": "DJ Moore",
   "playerId": "00-0034827",
-  "prediction": "Lean under. Not a lock. A lean. DJ Moore (BUF), rec yds, at NYJ, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Last week was a 25 stinker. Lake 34 vs book 49.5 \u2014 31.3% dayl\u2026",
+  "prediction": "Lean under. Not a lock. A lean. DJ Moore (BUF), rec yds, at NYJ, a defense that brings real resistance. Lake 34 vs book 49.5 \u2014 31.3% daylight, under.",
   "redFlags": []
  },
  "00-0034829": {
@@ -1421,29 +1430,32 @@
   ],
   "name": "Saquon Barkley",
   "playerId": "00-0034844",
-  "prediction": "Bash the under. The books haven't moved it enough. Saquon Barkley (PHI), rush yds, at PIT, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 22 stinker. Lake 42.5 vs\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Saquon Barkley (PHI), rush yds, at PIT, an average defense. Lake 42.5 vs book 74.5 \u2014 43% daylight, under.",
   "redFlags": []
  },
  "00-0034855": {
-  "composite": 0.0,
+  "composite": -0.113,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "usage"
   ],
   "name": "Baker Mayfield",
   "playerId": "00-0034855",
-  "prediction": "No play. Baker Mayfield is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the under. Baker Mayfield (TB), rush yds, at DET, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 14 vs book 16.5 \u2014 15.2% daylight, under.",
   "redFlags": []
  },
  "00-0034857": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.253,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "last five",
+   "usage",
+   "red zone"
   ],
   "name": "Josh Allen",
   "playerId": "00-0034857",
-  "prediction": "No play. Josh Allen is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Josh Allen over. That's my number. Josh Allen (BUF), rush yds, at NYJ, a soft run-fit defense. Lake 30.5 vs book 36.5 \u2014 18.7% daylight, under.",
   "redFlags": []
  },
  "00-0034869": {
@@ -1539,14 +1551,17 @@
   "redFlags": []
  },
  "00-0035228": {
-  "composite": 0.0,
+  "composite": 0.123,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Kyler Murray",
   "playerId": "00-0035228",
-  "prediction": "No play. Kyler Murray is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the over. Kyler Murray (MIN), rush yds, at GB, a soft run-fit defense. 3-for-5 lately. He owes nobody. Lake 27.5 vs book 20.5 \u2014 34.1% daylight, over.",
   "redFlags": []
  },
  "00-0035229": {
@@ -1601,14 +1616,14 @@
   "redFlags": []
  },
  "00-0035289": {
-  "composite": -0.336,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0035289",
   "playerId": "00-0035289",
-  "prediction": "Lean under. Not a lock. A lean. 00-0035289 (ARI), pass yds, at LA, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0035358": {
@@ -1687,7 +1702,7 @@
   ],
   "name": "David Montgomery",
   "playerId": "00-0035685",
-  "prediction": "Lean under. Not a lock. A lean. David Montgomery (HOU), rush yds, at CLE, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 11 stinker. Lake 27 vs book 44.5 \u2014 39.3%\u2026",
+  "prediction": "Lean under. Not a lock. A lean. David Montgomery (HOU), rush yds, at CLE, an average defense. Lake 27 vs book 44.5 \u2014 39.3% daylight, under.",
   "redFlags": []
  },
  "00-0035689": {
@@ -1704,14 +1719,14 @@
   "redFlags": []
  },
  "00-0035700": {
-  "composite": -0.192,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0035700",
   "playerId": "00-0035700",
-  "prediction": "Lean under. Not a lock. A lean. 00-0035700 (GB), rush yds, at MIN, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0035704": {
@@ -1727,14 +1742,15 @@
   "redFlags": []
  },
  "00-0035710": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.166,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "usage",
+   "red zone"
   ],
   "name": "Daniel Jones",
   "playerId": "00-0035710",
-  "prediction": "No play. Daniel Jones is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Daniel Jones over. That's my number. Daniel Jones (IND), rush yds, at MIA, an average defense. 3-for-5 lately. He owes nobody. Lake 9.5 vs book 11.5 \u2014 17.4% daylight, under.",
   "redFlags": []
  },
  "00-0035719": {
@@ -1766,16 +1782,14 @@
   "redFlags": []
  },
  "00-0035993": {
-  "composite": -0.14,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup",
-   "projection",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0035993",
   "playerId": "00-0035993",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0035993 (BAL), pass yds, at LAC, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0036040": {
@@ -1815,7 +1829,7 @@
   ],
   "name": "J.K. Dobbins",
   "playerId": "00-0036158",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. J.K. Dobbins (DEN), rush yds, at LV, a defense you can run a truck through. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 18 stinker\u2026",
+  "prediction": "The only angle here is the under. J.K. Dobbins (DEN), rush yds, at LV, a defense you can run a truck through. Lake 40.5 vs book 59.5 \u2014 31.9% daylight, under.",
   "redFlags": []
  },
  "00-0036162": {
@@ -1830,14 +1844,14 @@
   "redFlags": []
  },
  "00-0036212": {
-  "composite": -0.124,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0036212",
   "playerId": "00-0036212",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0036212 (ATL), pass yds, at KC, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0036223": {
@@ -1850,7 +1864,7 @@
   ],
   "name": "Jonathan Taylor",
   "playerId": "00-0036223",
-  "prediction": "Lean under. Not a lock. A lean. Jonathan Taylor (IND), rush yds, at MIA, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 46 stinker. Lake 67 vs book 90.5 \u2014 26% daylig\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Jonathan Taylor (IND), rush yds, at MIA, an average defense. Lake 67 vs book 90.5 \u2014 26% daylight, under.",
   "redFlags": []
  },
  "00-0036244": {
@@ -1891,7 +1905,7 @@
   ],
   "name": "D'Andre Swift",
   "playerId": "00-0036275",
-  "prediction": "I'm on D'Andre Swift over. That's my number. D'Andre Swift (CHI), rush yds, at NO, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 31 stinker. Lake\u2026",
+  "prediction": "I'm on D'Andre Swift over. That's my number. D'Andre Swift (CHI), rush yds, at NO, a defense you can run a truck through. Lake 58 vs book 68.5 \u2014 15.3% daylight, under.",
   "redFlags": []
  },
  "00-0036290": {
@@ -1932,14 +1946,17 @@
   "redFlags": []
  },
  "00-0036355": {
-  "composite": 0.0,
+  "composite": -0.045,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Justin Herbert",
   "playerId": "00-0036355",
-  "prediction": "No play. Justin Herbert is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Justin Herbert (LAC), rush yds, at BAL, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Last week was a 7 stinker.",
   "redFlags": []
  },
  "00-0036358": {
@@ -1957,14 +1974,15 @@
   "redFlags": []
  },
  "00-0036389": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": -0.152,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "usage",
+   "red zone"
   ],
   "name": "Jalen Hurts",
   "playerId": "00-0036389",
-  "prediction": "No play. Jalen Hurts is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Lean under. Not a lock. A lean. Jalen Hurts (PHI), rush yds, at PIT, an average defense. Lake 19 vs book 24.5 \u2014 25.5% daylight, under.",
   "redFlags": []
  },
  "00-0036410": {
@@ -1977,18 +1995,18 @@
   ],
   "name": "Tee Higgins",
   "playerId": "00-0036410",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Tee Higgins (CIN), rec yds, at PIT, a soft run-fit defense. 3-for-5 lately. He owes nobody. Last week was a 32 stinker. Lake 72.5 vs book 62.5 \u2014 17.\u2026",
+  "prediction": "The only angle here is the over. Tee Higgins (CIN), rec yds, at PIT, a soft run-fit defense. 3-for-5 lately. He owes nobody. Last week was a 32 stinker. Lake 72.5 vs book 62.5 \u2014 17.9% daylight, over.",
   "redFlags": []
  },
  "00-0036415": {
-  "composite": -0.169,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0036415",
   "playerId": "00-0036415",
-  "prediction": "Lean under. Not a lock. A lean. 00-0036415 (WAS), pass yds, at NYG, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0036429": {
@@ -2005,14 +2023,17 @@
   "redFlags": []
  },
  "00-0036442": {
-  "composite": 0.0,
+  "composite": -0.021,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "last five",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Joe Burrow",
   "playerId": "00-0036442",
-  "prediction": "No play. Joe Burrow is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Joe Burrow (CIN), rush yds, at PIT, an average defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 7.5 vs book 8.5 \u2014 11.8% daylight, under.",
   "redFlags": []
  },
  "00-0036463": {
@@ -2040,7 +2061,7 @@
   ],
   "name": "Rashod Bateman",
   "playerId": "00-0036550",
-  "prediction": "Lean under. Not a lock. A lean. Rashod Bateman (BAL), rec yds, at LAC, an elite, legit defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Last week was a 6 stinker. Lake 21 vs book 19.5 \u2014 7.7%\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Rashod Bateman (BAL), rec yds, at LAC, an elite, legit defense. Lake 21 vs book 19.5 \u2014 7.7% daylight, over.",
   "redFlags": []
  },
  "00-0036554": {
@@ -2069,7 +2090,7 @@
   ],
   "name": "Chuba Hubbard",
   "playerId": "00-0036555",
-  "prediction": "Put your neck out \u2014 Chuba Hubbard's going over. Chuba Hubbard (CAR), rush yds, at NO, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 60.5 vs book 66.5 \u2014\u2026",
+  "prediction": "Put your neck out \u2014 Chuba Hubbard's going over. Chuba Hubbard (CAR), rush yds, at NO, a defense you can run a truck through. Lake 60.5 vs book 66.5 \u2014 9% daylight, under.",
   "redFlags": []
  },
  "00-0036564": {
@@ -2092,7 +2113,7 @@
   ],
   "name": "Jaylen Waddle",
   "playerId": "00-0036613",
-  "prediction": "Lean under. Not a lock. A lean. Jaylen Waddle (DEN), rec yds, at LV, a soft run-fit defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Last week was a 22 stinker. Lake 40.5 vs book 56.5 \u2014 28.3%\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Jaylen Waddle (DEN), rec yds, at LV, a soft run-fit defense. Lake 40.5 vs book 56.5 \u2014 28.3% daylight, under.",
   "redFlags": []
  },
  "00-0036637": {
@@ -2166,7 +2187,7 @@
   ],
   "name": "Najee Harris",
   "playerId": "00-0036893",
-  "prediction": "Lean under. Not a lock. A lean. Najee Harris (NYG), rush yds, at WAS, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 2 stinker. Lake 16.5 vs book 23.5 \u2014 29.8% daylig\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Najee Harris (NYG), rush yds, at WAS, an average defense. Lake 16.5 vs book 23.5 \u2014 29.8% daylight, under.",
   "redFlags": []
  },
  "00-0036894": {
@@ -2182,12 +2203,14 @@
   "redFlags": []
  },
  "00-0036898": {
-  "composite": -0.102,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0036898",
   "playerId": "00-0036898",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0036898 (HOU), pass yds, at CLE, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0036900": {
@@ -2239,7 +2262,7 @@
   ],
   "name": "Amon-Ra St. Brown",
   "playerId": "00-0036963",
-  "prediction": "Lean under. Not a lock. A lean. Amon-Ra St. Brown (DET), rec yds, at NE, a defense that brings real resistance. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 71.5 vs book 75.5 \u2014 6.5% daylight, un\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Amon-Ra St. Brown (DET), rec yds, at NE, a defense that brings real resistance. Lake 71.5 vs book 75.5 \u2014 6.5% daylight, under.",
   "redFlags": []
  },
  "00-0036970": {
@@ -2256,14 +2279,16 @@
   "redFlags": []
  },
  "00-0036971": {
-  "composite": 0.0,
+  "composite": 0.018,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Trevor Lawrence",
   "playerId": "00-0036971",
-  "prediction": "No play. Trevor Lawrence is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the under. Trevor Lawrence (JAX), rush yds, at TEN, an average defense. Lake 11 vs book 14.5 \u2014 24.1% daylight, under.",
   "redFlags": []
  },
  "00-0036973": {
@@ -2334,16 +2359,14 @@
   "redFlags": []
  },
  "00-0037120": {
-  "composite": -0.369,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage",
-   "red zone"
+   "unknown name"
   ],
   "name": "00-0037120",
   "playerId": "00-0037120",
-  "prediction": "Lean under. Not a lock. A lean. 00-0037120 (DAL), rush yds, at SF, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0037157": {
@@ -2396,7 +2419,7 @@
   ],
   "name": "Drake London",
   "playerId": "00-0037238",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Drake London (ATL), rec yds, at KC, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 65 vs book 45.5 \u2014 39.\u2026",
+  "prediction": "The only angle here is the over. Drake London (ATL), rec yds, at KC, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 65 vs book 45.5 \u2014 39.8% daylight, over.",
   "redFlags": []
  },
  "00-0037239": {
@@ -2421,7 +2444,7 @@
   ],
   "name": "Jameson Williams",
   "playerId": "00-0037240",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Jameson Williams (DET), rec yds, at NE, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Last week was a 31 stinker. Lake 53.5\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Jameson Williams (DET), rec yds, at NE, a defense that brings real resistance. Lake 53.5 vs book 50.5 \u2014 5.9% daylight, over.",
   "redFlags": []
  },
  "00-0037244": {
@@ -2474,7 +2497,7 @@
   ],
   "name": "Greg Dulcich",
   "playerId": "00-0037252",
-  "prediction": "Put your neck out \u2014 Greg Dulcich's going over. Greg Dulcich (MIA), rec yds, at IND, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Last week was a 14 stinker.\u2026",
+  "prediction": "Put your neck out \u2014 Greg Dulcich's going over. Greg Dulcich (MIA), rec yds, at IND, a defense you can run a truck through. Lake 35 vs book 29.5 \u2014 18.6% daylight, over.",
   "redFlags": []
  },
  "00-0037256": {
@@ -2491,15 +2514,14 @@
   "redFlags": []
  },
  "00-0037258": {
-  "composite": -0.302,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "usage",
-   "red zone"
+   "unknown name"
   ],
   "name": "00-0037258",
   "playerId": "00-0037258",
-  "prediction": "Lean under. Not a lock. A lean. 00-0037258 (PHI), rush yds, at PIT, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0037261": {
@@ -2513,7 +2535,7 @@
   ],
   "name": "Khalil Shakir",
   "playerId": "00-0037261",
-  "prediction": "Lean under. Not a lock. A lean. Khalil Shakir (BUF), rec yds, at NYJ, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 39 vs book 45.5 \u2014 16.1% daylight, un\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Khalil Shakir (BUF), rec yds, at NYJ, a defense that brings real resistance. Lake 39 vs book 45.5 \u2014 16.1% daylight, under.",
   "redFlags": []
  },
  "00-0037263": {
@@ -2528,7 +2550,7 @@
   ],
   "name": "Tyler Allgeier",
   "playerId": "00-0037263",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Tyler Allgeier (ARI), rush yds, at LA, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 36.5 vs book 18.5\u2026",
+  "prediction": "The only angle here is the over. Tyler Allgeier (ARI), rush yds, at LA, a defense that brings real resistance. Lake 36.5 vs book 18.5 \u2014 97.3% daylight, over.",
   "redFlags": []
  },
  "00-0037268": {
@@ -2543,24 +2565,25 @@
   "redFlags": []
  },
  "00-0037277": {
-  "composite": -0.271,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0037277",
   "playerId": "00-0037277",
-  "prediction": "Lean under. Not a lock. A lean. 00-0037277 (ARI), pass yds, at LA, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0037282": {
-  "composite": -0.079,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0037282",
   "playerId": "00-0037282",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0037282 (DAL), pass yds, at SF, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0037291": {
@@ -2645,7 +2668,7 @@
   ],
   "name": "Garrett Wilson",
   "playerId": "00-0037740",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Garrett Wilson (NYJ), rec yds, at BUF, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 55.5 vs book 75.5 \u2014 26.5% daylight, under.",
+  "prediction": "The only angle here is the under. Garrett Wilson (NYJ), rec yds, at BUF, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 55.5 vs book 75.5 \u2014 26.5% daylight, under.",
   "redFlags": []
  },
  "00-0037741": {
@@ -2658,7 +2681,7 @@
   ],
   "name": "Jahan Dotson",
   "playerId": "00-0037741",
-  "prediction": "Lean under. Not a lock. A lean. Jahan Dotson (ATL), rec yds, at KC, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Last week was a 16 stinker. Lake 28.5 vs book 36.5 \u2014 21.9%\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Jahan Dotson (ATL), rec yds, at KC, a defense that brings real resistance. Lake 28.5 vs book 36.5 \u2014 21.9% daylight, under.",
   "redFlags": []
  },
  "00-0037742": {
@@ -2698,7 +2721,7 @@
   ],
   "name": "Brian Robinson",
   "playerId": "00-0037746",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Brian Robinson (ATL), rush yds, at KC, a defense that brings real resistance. 3-for-5 lately. He owes nobody. Last week was a 1 stinker. Lake 26.5 v\u2026",
+  "prediction": "The only angle here is the over. Brian Robinson (ATL), rush yds, at KC, a defense that brings real resistance. Lake 26.5 vs book 19.5 \u2014 43.2% daylight, over.",
   "redFlags": []
  },
  "00-0037801": {
@@ -2736,18 +2759,20 @@
   ],
   "name": "Romeo Doubs",
   "playerId": "00-0037816",
-  "prediction": "Put your neck out \u2014 Romeo Doubs's going over. Romeo Doubs (NE), rec yds, at DET, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 42.5 vs book 39.5 \u2014 7.6%\u2026",
+  "prediction": "Put your neck out \u2014 Romeo Doubs's going over. Romeo Doubs (NE), rec yds, at DET, a defense you can run a truck through. Lake 42.5 vs book 39.5 \u2014 7.6% daylight, over.",
   "redFlags": []
  },
  "00-0037834": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.444,
+  "confidence": "high",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage"
   ],
   "name": "Brock Purdy",
   "playerId": "00-0037834",
-  "prediction": "No play. Brock Purdy is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Put your neck out \u2014 Brock Purdy's going over. Brock Purdy (SF), rush yds, at DAL, a defense you can run a truck through. 3-for-5 lately. He owes nobody. Lake 21 vs book 16.5 \u2014 20% daylight, over.",
   "redFlags": []
  },
  "00-0037838": {
@@ -2762,7 +2787,7 @@
   ],
   "name": "Isaiah Likely",
   "playerId": "00-0037838",
-  "prediction": "Put your neck out \u2014 Isaiah Likely's going over. Isaiah Likely (NYG), rec yds, at WAS, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 42.5 vs book 39.5 \u2014\u2026",
+  "prediction": "Put your neck out \u2014 Isaiah Likely's going over. Isaiah Likely (NYG), rec yds, at WAS, a defense you can run a truck through. Lake 42.5 vs book 39.5 \u2014 7.6% daylight, over.",
   "redFlags": []
  },
  "00-0037840": {
@@ -2777,7 +2802,7 @@
   ],
   "name": "Kyren Williams",
   "playerId": "00-0037840",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Kyren Williams (LA), rush yds, at ARI, a soft run-fit defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 45 stinker. Lake 59 vs\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Kyren Williams (LA), rush yds, at ARI, a soft run-fit defense. Lake 59 vs book 67.5 \u2014 13.9% daylight, under.",
   "redFlags": []
  },
  "00-0038041": {
@@ -2829,7 +2854,7 @@
   ],
   "name": "Wan'Dale Robinson",
   "playerId": "00-0038117",
-  "prediction": "I'm on Wan'Dale Robinson over. That's my number. Wan'Dale Robinson (TEN), rec yds, at JAX, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 44 vs book 38.5 \u2014 1\u2026",
+  "prediction": "I'm on Wan'Dale Robinson over. That's my number. Wan'Dale Robinson (TEN), rec yds, at JAX, a defense you can run a truck through. Lake 44 vs book 38.5 \u2014 17.3% daylight, over.",
   "redFlags": []
  },
  "00-0038120": {
@@ -2860,14 +2885,15 @@
   "redFlags": []
  },
  "00-0038128": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.188,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "usage",
+   "red zone"
   ],
   "name": "Malik Willis",
   "playerId": "00-0038128",
-  "prediction": "No play. Malik Willis is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Malik Willis over. That's my number. Malik Willis (MIA), rush yds, at IND, an average defense. Lake 24.5 vs book 28.5 \u2014 14% daylight, under.",
   "redFlags": []
  },
  "00-0038134": {
@@ -2895,18 +2921,18 @@
   ],
   "name": "Dontayvion Wicks",
   "playerId": "00-0038393",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Dontayvion Wicks (PHI), rec yds, at PIT, a soft run-fit defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 24 stinker. Lake 33 vs b\u2026",
+  "prediction": "The only angle here is the under. Dontayvion Wicks (PHI), rec yds, at PIT, a soft run-fit defense. Lake 33 vs book 41.5 \u2014 19.5% daylight, under.",
   "redFlags": []
  },
  "00-0038400": {
-  "composite": 0.147,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0038400",
   "playerId": "00-0038400",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0038400 (PHI), pass yds, at PIT, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038416": {
@@ -2919,7 +2945,7 @@
   ],
   "name": "Tyson Bagent",
   "playerId": "00-0038416",
-  "prediction": "Lean under. Not a lock. A lean. Tyson Bagent (CHI), pass yds, at NO, a defense that brings real resistance. 1-for-3 \u2014 the number hugs him worse than the stat sheet. Last week was a 87 stinker. Lake\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Tyson Bagent (CHI), pass yds, at NO, a defense that brings real resistance. Lake 139 vs book 201.5 \u2014 30.8% daylight, under.",
   "redFlags": []
  },
  "00-0038428": {
@@ -2942,18 +2968,18 @@
   ],
   "name": "Keaton Mitchell",
   "playerId": "00-0038454",
-  "prediction": "Bash the under. The books haven't moved it enough. Keaton Mitchell (LAC), rush yds, at BAL, a defense that brings real resistance. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 19.5 vs book 16.5\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Keaton Mitchell (LAC), rush yds, at BAL, a defense that brings real resistance. Lake 19.5 vs book 16.5 \u2014 18.2% daylight, over.",
   "redFlags": []
  },
  "00-0038476": {
-  "composite": 0.35,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0038476",
   "playerId": "00-0038476",
-  "prediction": "I'm on 00-0038476 over. That's my number. 00-0038476 (NE), pass yds, at DET, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038542": {
@@ -2968,7 +2994,7 @@
   ],
   "name": "Bijan Robinson",
   "playerId": "00-0038542",
-  "prediction": "Bash the under. The books haven't moved it enough. Bijan Robinson (ATL), rush yds, at KC, a defense that brings real resistance. Putrid \u2014 0-for-5. He's cost you dinner twice. Lake 79.5 vs book 108.\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Bijan Robinson (ATL), rush yds, at KC, a defense that brings real resistance. Lake 79.5 vs book 108.5 \u2014 26.7% daylight, under.",
   "redFlags": []
  },
  "00-0038543": {
@@ -2995,7 +3021,7 @@
   ],
   "name": "Quentin Johnston",
   "playerId": "00-0038544",
-  "prediction": "Put your neck out \u2014 Quentin Johnston's going over. Quentin Johnston (LAC), rec yds, at BAL, a soft run-fit defense. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 41 vs book 35.5 \u2014 22.4% dayli\u2026",
+  "prediction": "Put your neck out \u2014 Quentin Johnston's going over. Quentin Johnston (LAC), rec yds, at BAL, a soft run-fit defense. Lake 41 vs book 35.5 \u2014 22.4% daylight, over.",
   "redFlags": []
  },
  "00-0038551": {
@@ -3054,14 +3080,14 @@
   "redFlags": []
  },
  "00-0038562": {
-  "composite": -0.282,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0038562",
   "playerId": "00-0038562",
-  "prediction": "Lean under. Not a lock. A lean. 00-0038562 (BAL), pass yds, at LAC, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038563": {
@@ -3111,7 +3137,7 @@
   ],
   "name": "Chase Brown",
   "playerId": "00-0038597",
-  "prediction": "Bash the under. The books haven't moved it enough. Chase Brown (CIN), rush yds, at PIT, an average defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Lake 45.5 vs book 63.5 \u2014 29.5% daylight, un\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Chase Brown (CIN), rush yds, at PIT, an average defense. Lake 45.5 vs book 63.5 \u2014 29.5% daylight, under.",
   "redFlags": []
  },
  "00-0038606": {
@@ -3123,7 +3149,7 @@
   ],
   "name": "Parker Washington",
   "playerId": "00-0038606",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Parker Washington (JAX), rec yds, at TEN, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 49.5 vs book 73.5 \u2014 32.7% daylight, un\u2026",
+  "prediction": "The only angle here is the under. Parker Washington (JAX), rec yds, at TEN, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 49.5 vs book 73.5 \u2014 32.7% daylight, under.",
   "redFlags": []
  },
  "00-0038608": {
@@ -3148,7 +3174,7 @@
   ],
   "name": "Chris Rodriguez Jr.",
   "playerId": "00-0038611",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Chris Rodriguez Jr. (JAX), rush yds, at TEN, an average defense. 3-for-5 lately. He owes nobody. Lake 28 vs book 20.5 \u2014 36.6% daylight, over.",
+  "prediction": "The only angle here is the over. Chris Rodriguez Jr. (JAX), rush yds, at TEN, an average defense. 3-for-5 lately. He owes nobody. Lake 28 vs book 20.5 \u2014 36.6% daylight, over.",
   "redFlags": []
  },
  "00-0038618": {
@@ -3174,7 +3200,7 @@
   ],
   "name": "DeMario Douglas",
   "playerId": "00-0038621",
-  "prediction": "Put your neck out \u2014 DeMario Douglas's going over. DeMario Douglas (NE), rec yds, at DET, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 43.5 vs book 27.5\u2026",
+  "prediction": "Put your neck out \u2014 DeMario Douglas's going over. DeMario Douglas (NE), rec yds, at DET, a defense you can run a truck through. Lake 43.5 vs book 27.5 \u2014 58.2% daylight, over.",
   "redFlags": []
  },
  "00-0038710": {
@@ -3225,7 +3251,7 @@
   ],
   "name": "Emanuel Wilson",
   "playerId": "00-0038797",
-  "prediction": "Put your neck out \u2014 Emanuel Wilson's going over. Emanuel Wilson (SEA), rush yds, at LV, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 47 vs book 38.5 \u2014\u2026",
+  "prediction": "Put your neck out \u2014 Emanuel Wilson's going over. Emanuel Wilson (SEA), rush yds, at LV, a defense you can run a truck through. Lake 47 vs book 38.5 \u2014 19% daylight, over.",
   "redFlags": []
  },
  "00-0038824": {
@@ -3241,14 +3267,14 @@
   "redFlags": []
  },
  "00-0038905": {
-  "composite": 0.26,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0038905",
   "playerId": "00-0038905",
-  "prediction": "I'm on 00-0038905 over. That's my number. 00-0038905 (LA), pass yds, at ARI, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038933": {
@@ -3263,7 +3289,7 @@
   ],
   "name": "Dalton Kincaid",
   "playerId": "00-0038933",
-  "prediction": "Bash the under. The books haven't moved it enough. Dalton Kincaid (BUF), rec yds, at NYJ, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 28 sti\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Dalton Kincaid (BUF), rec yds, at NYJ, a defense that brings real resistance. Lake 38.5 vs book 54.5 \u2014 29.4% daylight, under.",
   "redFlags": []
  },
  "00-0038935": {
@@ -3275,28 +3301,29 @@
   ],
   "name": "Brenton Strange",
   "playerId": "00-0038935",
-  "prediction": "I'm on Brenton Strange over. That's my number. Brenton Strange (JAX), rec yds, at TEN, an average defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Last week was a 22 stinker. Lake 38.5 vs bo\u2026",
+  "prediction": "I'm on Brenton Strange over. That's my number. Brenton Strange (JAX), rec yds, at TEN, an average defense. Lake 38.5 vs book 33.5 \u2014 14.9% daylight, over.",
   "redFlags": []
  },
  "00-0038951": {
-  "composite": -0.036,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "usage",
-   "red zone"
+   "unknown name"
   ],
   "name": "00-0038951",
   "playerId": "00-0038951",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0038951 (TB), rush yds, at DET, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038977": {
-  "composite": -0.102,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0038977",
   "playerId": "00-0038977",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0038977 (HOU), pass yds, at CLE, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0038994": {
@@ -3309,7 +3336,7 @@
   ],
   "name": "Jordan Addison",
   "playerId": "00-0038994",
-  "prediction": "Lean under. Not a lock. A lean. Jordan Addison (MIN), rec yds, at GB, an elite, legit defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 28 stinker. Lake 33.5 vs book 55.5 \u2014 39.6%\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Jordan Addison (MIN), rec yds, at GB, an elite, legit defense. Lake 33.5 vs book 55.5 \u2014 39.6% daylight, under.",
   "redFlags": []
  },
  "00-0038996": {
@@ -3323,7 +3350,7 @@
   ],
   "name": "Tucker Kraft",
   "playerId": "00-0038996",
-  "prediction": "Bash the under. The books haven't moved it enough. Tucker Kraft (GB), rec yds, at MIN, an elite, legit defense. 3-for-5 lately. He owes nobody. Last week was a 1 stinker. Lake 38 vs book 41.5 \u2014 6.2\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Tucker Kraft (GB), rec yds, at MIN, an elite, legit defense. Lake 38 vs book 41.5 \u2014 6.2% daylight, under.",
   "redFlags": []
  },
  "00-0038997": {
@@ -3337,7 +3364,7 @@
   ],
   "name": "Josh Downs",
   "playerId": "00-0038997",
-  "prediction": "Bash the under. The books haven't moved it enough. Josh Downs (IND), rec yds, at MIA, an average defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Last week was a 24 stinker. Lake 31.5 vs book\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Josh Downs (IND), rec yds, at MIA, an average defense. Lake 31.5 vs book 62.5 \u2014 49.6% daylight, under.",
   "redFlags": []
  },
  "00-0039000": {
@@ -3374,7 +3401,7 @@
   ],
   "name": "De'Von Achane",
   "playerId": "00-0039040",
-  "prediction": "Lean under. Not a lock. A lean. De'Von Achane (MIA), rush yds, at IND, an average defense. 1-for-3 \u2014 the number hugs him worse than the stat sheet. Last week was a 17 stinker. Lake 52 vs book 59.5\u2026",
+  "prediction": "Lean under. Not a lock. A lean. De'Von Achane (MIA), rush yds, at IND, an average defense. Lake 52 vs book 59.5 \u2014 14% daylight, under.",
   "redFlags": []
  },
  "00-0039041": {
@@ -3436,7 +3463,7 @@
   ],
   "name": "Sam LaPorta",
   "playerId": "00-0039065",
-  "prediction": "Lean under. Not a lock. A lean. Sam LaPorta (DET), rec yds, at NE, a defense that brings real resistance. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 32 stinker. Lake 44 vs book 48.5\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Sam LaPorta (DET), rec yds, at NE, a defense that brings real resistance. Lake 44 vs book 48.5 \u2014 9.3% daylight, under.",
   "redFlags": []
  },
  "00-0039066": {
@@ -3465,7 +3492,7 @@
   ],
   "name": "Rashee Rice",
   "playerId": "00-0039067",
-  "prediction": "I'm on Rashee Rice over. That's my number. Rashee Rice (KC), rec yds, at ATL, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 57.5 vs book 54.5 \u2014 5.5% dayligh\u2026",
+  "prediction": "I'm on Rashee Rice over. That's my number. Rashee Rice (KC), rec yds, at ATL, a defense you can run a truck through. Lake 57.5 vs book 54.5 \u2014 5.5% daylight, over.",
   "redFlags": []
  },
  "00-0039074": {
@@ -3532,34 +3559,37 @@
   "redFlags": []
  },
  "00-0039163": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.161,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "usage",
+   "red zone"
   ],
   "name": "C.J. Stroud",
   "playerId": "00-0039163",
-  "prediction": "No play. C.J. Stroud is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on C.J. Stroud over. That's my number. C.J. Stroud (HOU), rush yds, at CLE, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet.",
   "redFlags": []
  },
  "00-0039164": {
-  "composite": -0.056,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0039164",
   "playerId": "00-0039164",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0039164 (IND), pass yds, at MIA, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039165": {
-  "composite": 0.237,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0039165",
   "playerId": "00-0039165",
-  "prediction": "I'm on 00-0039165 over. That's my number. 00-0039165 (SEA), rush yds, at LV, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039172": {
@@ -3574,12 +3604,14 @@
   "redFlags": []
  },
  "00-0039229": {
-  "composite": -0.011,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0039229",
   "playerId": "00-0039229",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0039229 (NO), pass yds, at CAR, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039299": {
@@ -3607,21 +3639,18 @@
   ],
   "name": "Malik Nabers",
   "playerId": "00-0039337",
-  "prediction": "Put your neck out \u2014 Malik Nabers's going over. Malik Nabers (NYG), rec yds, at WAS, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 75 vs book 54.5 \u2014 37.6\u2026",
+  "prediction": "Put your neck out \u2014 Malik Nabers's going over. Malik Nabers (NYG), rec yds, at WAS, a defense you can run a truck through. Lake 75 vs book 54.5 \u2014 37.6% daylight, over.",
   "redFlags": []
  },
  "00-0039338": {
-  "composite": -0.195,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "projection",
-   "usage",
-   "red zone"
+   "unknown name"
   ],
   "name": "00-0039338",
   "playerId": "00-0039338",
-  "prediction": "Lean under. Not a lock. A lean. 00-0039338 (LV), rec yds, at SEA, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039359": {
@@ -3646,7 +3675,7 @@
   ],
   "name": "Bucky Irving",
   "playerId": "00-0039361",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Bucky Irving (TB), rush yds, at DET, an average defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 75.5 vs book 55.5 \u2014 36% daylight, over.",
+  "prediction": "The only angle here is the over. Bucky Irving (TB), rush yds, at DET, an average defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 75.5 vs book 55.5 \u2014 36% daylight, over.",
   "redFlags": []
  },
  "00-0039364": {
@@ -3661,18 +3690,18 @@
   ],
   "name": "Sione Vaki",
   "playerId": "00-0039364",
-  "prediction": "Bash the under. The books haven't moved it enough. Sione Vaki (DET), rush yds, at NE, an elite, legit defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 16 vs book 9.5 \u2014 68.4% daylight, o\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Sione Vaki (DET), rush yds, at NE, an elite, legit defense. Lake 16 vs book 9.5 \u2014 68.4% daylight, over.",
   "redFlags": []
  },
  "00-0039373": {
-  "composite": 0.327,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0039373",
   "playerId": "00-0039373",
-  "prediction": "I'm on 00-0039373 over. That's my number. 00-0039373 (NO), rush yds, at CAR, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039384": {
@@ -3701,14 +3730,14 @@
   "redFlags": []
  },
  "00-0039398": {
-  "composite": 0.147,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0039398",
   "playerId": "00-0039398",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0039398 (PHI), pass yds, at PIT, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039404": {
@@ -3723,12 +3752,14 @@
   "redFlags": []
  },
  "00-0039405": {
-  "composite": -0.102,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0039405",
   "playerId": "00-0039405",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0039405 (HOU), pass yds, at CLE, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039407": {
@@ -3775,7 +3806,7 @@
   ],
   "name": "Devaughn Vele",
   "playerId": "00-0039424",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Devaughn Vele (NO), rec yds, at CAR, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 17 stinker. Lake 34.5 vs book 44\u2026",
+  "prediction": "The only angle here is the under. Devaughn Vele (NO), rec yds, at CAR, an average defense. Lake 34.5 vs book 44.5 \u2014 22.5% daylight, under.",
   "redFlags": []
  },
  "00-0039451": {
@@ -3792,16 +3823,14 @@
   "redFlags": []
  },
  "00-0039489": {
-  "composite": 0.228,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "projection",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0039489",
   "playerId": "00-0039489",
-  "prediction": "I'm on 00-0039489 over. That's my number. 00-0039489 (LAC), pass yds, at BAL, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0039491": {
@@ -3816,7 +3845,7 @@
   ],
   "name": "Jalen Coker",
   "playerId": "00-0039491",
-  "prediction": "Bash the under. The books haven't moved it enough. Jalen Coker (CAR), rec yds, at NO, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 29 stinker\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Jalen Coker (CAR), rec yds, at NO, a defense that brings real resistance. Lake 36.5 vs book 49.5 \u2014 26.3% daylight, under.",
   "redFlags": []
  },
  "00-0039498": {
@@ -3840,14 +3869,17 @@
   "redFlags": []
  },
  "00-0039732": {
-  "composite": 0.0,
+  "composite": 0.083,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "last five",
+   "usage",
+   "red zone"
   ],
   "name": "Bo Nix",
   "playerId": "00-0039732",
-  "prediction": "No play. Bo Nix is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the under. Bo Nix (DEN), rush yds, at LV, a defense you can run a truck through. Lake 14.5 vs book 17.5 \u2014 17.1% daylight, under.",
   "redFlags": []
  },
  "00-0039738": {
@@ -3940,7 +3972,7 @@
   ],
   "name": "MarShawn Lloyd",
   "playerId": "00-0039811",
-  "prediction": "Bash the under. The books haven't moved it enough. MarShawn Lloyd (GB), rush yds, at MIN, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 7 stin\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. MarShawn Lloyd (GB), rush yds, at MIN, a defense that brings real resistance. Lake 15 vs book 23.5 \u2014 36.2% daylight, under.",
   "redFlags": []
  },
  "00-0039847": {
@@ -3971,14 +4003,17 @@
   "redFlags": []
  },
  "00-0039851": {
-  "composite": 0.0,
+  "composite": 0.014,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "last five",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Drake Maye",
   "playerId": "00-0039851",
-  "prediction": "No play. Drake Maye is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "The only angle here is the under. Drake Maye (NE), rush yds, at DET, an average defense. Lake 19.5 vs book 26.5 \u2014 29.1% daylight, under.",
   "redFlags": []
  },
  "00-0039880": {
@@ -3991,7 +4026,7 @@
   ],
   "name": "Malik Washington",
   "playerId": "00-0039880",
-  "prediction": "I'm on Malik Washington over. That's my number. Malik Washington (MIA), rec yds, at IND, a defense you can run a truck through. 3-for-5 lately. He owes nobody. Last week was a 21 stinker. Lake 29 v\u2026",
+  "prediction": "I'm on Malik Washington over. That's my number. Malik Washington (MIA), rec yds, at IND, a defense you can run a truck through. Lake 29 vs book 37.5 \u2014 22.7% daylight, under.",
   "redFlags": []
  },
  "00-0039890": {
@@ -4005,7 +4040,7 @@
   ],
   "name": "Adonai Mitchell",
   "playerId": "00-0039890",
-  "prediction": "I'm on Adonai Mitchell over. That's my number. Adonai Mitchell (NYJ), rec yds, at BUF, an average defense. Slaughtered the number 3 of 3 \u2014 he's the ride. Lake 36.5 vs book 47.5 \u2014 24.7% daylight, un\u2026",
+  "prediction": "I'm on Adonai Mitchell over. That's my number. Adonai Mitchell (NYJ), rec yds, at BUF, an average defense. Lake 36.5 vs book 47.5 \u2014 24.7% daylight, under.",
   "redFlags": []
  },
  "00-0039893": {
@@ -4042,18 +4077,21 @@
   ],
   "name": "Keon Coleman",
   "playerId": "00-0039901",
-  "prediction": "Lean under. Not a lock. A lean. Keon Coleman (BUF), rec yds, at NYJ, a defense that brings real resistance. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 17 stinker. Lake 28 vs book 36\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Keon Coleman (BUF), rec yds, at NYJ, a defense that brings real resistance. Lake 28 vs book 36.5 \u2014 25.3% daylight, under.",
   "redFlags": []
  },
  "00-0039910": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.382,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Jayden Daniels",
   "playerId": "00-0039910",
-  "prediction": "No play. Jayden Daniels is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Jayden Daniels over. That's my number. Jayden Daniels (WAS), rush yds, at NYG, a defense you can run a truck through.",
   "redFlags": []
  },
  "00-0039915": {
@@ -4070,27 +4108,28 @@
   "redFlags": []
  },
  "00-0039917": {
-  "composite": -0.282,
+  "composite": 0.0,
+  "confidence": "low",
+  "drivers": [
+   "unknown name"
+  ],
+  "name": "00-0039917",
+  "playerId": "00-0039917",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
+  "redFlags": []
+ },
+ "00-0039918": {
+  "composite": 0.282,
   "confidence": "medium",
   "drivers": [
    "matchup",
    "projection",
-   "usage"
-  ],
-  "name": "00-0039917",
-  "playerId": "00-0039917",
-  "prediction": "Lean under. Not a lock. A lean. 00-0039917 (ATL), pass yds, at KC, a defense that brings real resistance.",
-  "redFlags": []
- },
- "00-0039918": {
-  "composite": 0.0,
-  "confidence": "low",
-  "drivers": [
-   "wrong market"
+   "usage",
+   "red zone"
   ],
   "name": "Caleb Williams",
   "playerId": "00-0039918",
-  "prediction": "No play. Caleb Williams is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Caleb Williams over. That's my number. Caleb Williams (CHI), rush yds, at NO, a defense you can run a truck through.",
   "redFlags": []
  },
  "00-0039919": {
@@ -4104,31 +4143,29 @@
   ],
   "name": "Rome Odunze",
   "playerId": "00-0039919",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Rome Odunze (CHI), rec yds, at NO, a defense that brings real resistance. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 51 vs book 32.5 \u2014 56.9\u2026",
+  "prediction": "The only angle here is the over. Rome Odunze (CHI), rec yds, at NO, a defense that brings real resistance. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 51 vs book 32.5 \u2014 56.9% daylight, over.",
   "redFlags": []
  },
  "00-0039923": {
-  "composite": 0.375,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "projection",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0039923",
   "playerId": "00-0039923",
-  "prediction": "I'm on 00-0039923 over. That's my number. 00-0039923 (NYG), pass yds, at WAS, a defense you can run a truck through.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040009": {
-  "composite": -0.305,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040009",
   "playerId": "00-0040009",
-  "prediction": "Lean under. Not a lock. A lean. 00-0040009 (GB), pass yds, at MIN, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040024": {
@@ -4167,7 +4204,7 @@
   ],
   "name": "Ashton Jeanty",
   "playerId": "00-0040122",
-  "prediction": "Bash the under. The books haven't moved it enough. Ashton Jeanty (LV), rush yds, at SEA, an elite, legit defense. Putrid \u2014 0-for-5. He's cost you dinner twice. Last week was a 25 stinker. Lake 34 v\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Ashton Jeanty (LV), rush yds, at SEA, an elite, legit defense. Lake 34 vs book 56.5 \u2014 40.9% daylight, under.",
   "redFlags": []
  },
  "00-0040124": {
@@ -4181,7 +4218,7 @@
   ],
   "name": "Tetairoa McMillan",
   "playerId": "00-0040124",
-  "prediction": "Lean under. Not a lock. A lean. Tetairoa McMillan (CAR), rec yds, at NO, a defense that brings real resistance. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 56.5 vs book 70.5 \u2014 19.9% daylight, u\u2026",
+  "prediction": "Lean under. Not a lock. A lean. Tetairoa McMillan (CAR), rec yds, at NO, a defense that brings real resistance. Lake 56.5 vs book 70.5 \u2014 19.9% daylight, under.",
   "redFlags": []
  },
  "00-0040126": {
@@ -4196,7 +4233,7 @@
   ],
   "name": "Colston Loveland",
   "playerId": "00-0040126",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Colston Loveland (CHI), rec yds, at NO, a defense that brings real resistance. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 39.5 vs book 33.5\u2026",
+  "prediction": "The only angle here is the over. Colston Loveland (CHI), rec yds, at NO, a defense that brings real resistance. Lake 39.5 vs book 33.5 \u2014 17.9% daylight, over.",
   "redFlags": []
  },
  "00-0040128": {
@@ -4209,7 +4246,7 @@
   ],
   "name": "Tyler Warren",
   "playerId": "00-0040128",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Tyler Warren (IND), rec yds, at MIA, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 39 vs book 46.5 \u2014 17.9% daylight, under.",
+  "prediction": "The only angle here is the under. Tyler Warren (IND), rec yds, at MIA, an average defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 39 vs book 46.5 \u2014 17.9% daylight, under.",
   "redFlags": []
  },
  "00-0040129": {
@@ -4221,7 +4258,7 @@
   ],
   "name": "Emeka Egbuka",
   "playerId": "00-0040129",
-  "prediction": "I'm on Emeka Egbuka over. That's my number. Emeka Egbuka (TB), rec yds, at DET, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 45 vs book 38.5 \u2014 16.9% daylig\u2026",
+  "prediction": "I'm on Emeka Egbuka over. That's my number. Emeka Egbuka (TB), rec yds, at DET, a defense you can run a truck through. Lake 45 vs book 38.5 \u2014 16.9% daylight, over.",
   "redFlags": []
  },
  "00-0040131": {
@@ -4289,14 +4326,14 @@
   "redFlags": []
  },
  "00-0040172": {
-  "composite": 0.207,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040172",
   "playerId": "00-0040172",
-  "prediction": "I'm on 00-0040172 over. That's my number. 00-0040172 (SF), pass yds, at DAL, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040189": {
@@ -4323,7 +4360,7 @@
   ],
   "name": "Ollie Gordon II",
   "playerId": "00-0040198",
-  "prediction": "Put your neck out \u2014 Ollie Gordon II's going over. Ollie Gordon II (MIA), rush yds, at IND, an average defense. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 46 vs book 27.5 \u2014 67.3% daylight,\u2026",
+  "prediction": "Put your neck out \u2014 Ollie Gordon II's going over. Ollie Gordon II (MIA), rush yds, at IND, an average defense. Lake 46 vs book 27.5 \u2014 67.3% daylight, over.",
   "redFlags": []
  },
  "00-0040200": {
@@ -4358,12 +4395,14 @@
   "redFlags": []
  },
  "00-0040234": {
-  "composite": 0.056,
+  "composite": 0.0,
   "confidence": "low",
-  "drivers": [],
+  "drivers": [
+   "unknown name"
+  ],
   "name": "00-0040234",
   "playerId": "00-0040234",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0040234 (JAX), pass yds, at TEN, an average defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040236": {
@@ -4403,7 +4442,7 @@
   ],
   "name": "Jacory Croskey-Merritt",
   "playerId": "00-0040242",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Jacory Croskey-Merritt (WAS), rush yds, at NYG, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 43 vs book 60\u2026",
+  "prediction": "The only angle here is the under. Jacory Croskey-Merritt (WAS), rush yds, at NYG, a defense you can run a truck through. Lake 43 vs book 60.5 \u2014 28.9% daylight, under.",
   "redFlags": []
  },
  "00-0040277": {
@@ -4442,36 +4481,36 @@
   "redFlags": []
  },
  "00-0040394": {
-  "composite": -0.215,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040394",
   "playerId": "00-0040394",
-  "prediction": "Lean under. Not a lock. A lean. 00-0040394 (CAR), pass yds, at NO, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040464": {
-  "composite": 0.215,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040464",
   "playerId": "00-0040464",
-  "prediction": "I'm on 00-0040464 over. That's my number. 00-0040464 (LAC), pass yds, at BAL, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040494": {
-  "composite": -0.26,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040494",
   "playerId": "00-0040494",
-  "prediction": "Lean under. Not a lock. A lean. 00-0040494 (MIN), pass yds, at GB, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040506": {
@@ -4589,14 +4628,14 @@
   "redFlags": []
  },
  "00-0040648": {
-  "composite": 0.093,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "usage"
+   "unknown name"
   ],
   "name": "00-0040648",
   "playerId": "00-0040648",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0040648 (SEA), pass yds, at LV, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040663": {
@@ -4624,7 +4663,7 @@
   ],
   "name": "Omarion Hampton",
   "playerId": "00-0040666",
-  "prediction": "Bash the under. The books haven't moved it enough. Omarion Hampton (LAC), rush yds, at BAL, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 40.5 vs book 45\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Omarion Hampton (LAC), rush yds, at BAL, a defense that brings real resistance. Lake 40.5 vs book 45.5 \u2014 12.9% daylight, under.",
   "redFlags": []
  },
  "00-0040667": {
@@ -4638,27 +4677,31 @@
   ],
   "name": "Matthew Golden",
   "playerId": "00-0040667",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Matthew Golden (GB), rec yds, at MIN, an elite, legit defense. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 53 vs book 57.5 \u2014 7.8% daylight,\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. Matthew Golden (GB), rec yds, at MIN, an elite, legit defense. Lake 53 vs book 57.5 \u2014 7.8% daylight, under.",
   "redFlags": []
  },
  "00-0040668": {
-  "composite": 0.079,
-  "confidence": "low",
-  "drivers": [],
-  "name": "00-0040668",
-  "playerId": "00-0040668",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0040668 (CLE), pass yds, at HOU, an average defense.",
-  "redFlags": []
- },
- "00-0040676": {
   "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "unknown name"
+  ],
+  "name": "00-0040668",
+  "playerId": "00-0040668",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
+  "redFlags": []
+ },
+ "00-0040676": {
+  "composite": -0.372,
+  "confidence": "medium",
+  "drivers": [
+   "matchup",
+   "projection",
+   "usage"
   ],
   "name": "Cam Ward",
   "playerId": "00-0040676",
-  "prediction": "No play. Cam Ward is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "Lean under. Not a lock. A lean. Cam Ward (TEN), rush yds, at JAX, an elite, legit defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Lake 11.5 vs book 9.5 \u2014 9.5% daylight, over.",
   "redFlags": []
  },
  "00-0040691": {
@@ -4720,7 +4763,7 @@
   ],
   "name": "Bhayshul Tuten",
   "playerId": "00-0040719",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Bhayshul Tuten (JAX), rush yds, at TEN, an average defense. 3-for-5 lately. He owes nobody. Last week was a 29 stinker. Lake 45.5 vs book 53.5 \u2014 15%\u2026",
+  "prediction": "The only angle here is the under. Bhayshul Tuten (JAX), rush yds, at TEN, an average defense. 3-for-5 lately. He owes nobody. Last week was a 29 stinker. Lake 45.5 vs book 53.5 \u2014 15% daylight, under.",
   "redFlags": []
  },
  "00-0040727": {
@@ -4734,7 +4777,7 @@
   ],
   "name": "Tre Harris",
   "playerId": "00-0040727",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Tre Harris (LAC), rec yds, at BAL, a soft run-fit defense. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 6 stinker. Lake 25 vs book 31.\u2026",
+  "prediction": "The only angle here is the under. Tre Harris (LAC), rec yds, at BAL, a soft run-fit defense. Lake 25 vs book 31.5 \u2014 18% daylight, under.",
   "redFlags": []
  },
  "00-0040729": {
@@ -4761,7 +4804,7 @@
   ],
   "name": "RJ Harvey",
   "playerId": "00-0040730",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. RJ Harvey (DEN), rush yds, at LV, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 6 stinker. Lake\u2026",
+  "prediction": "No payday in this line \u2014 watch it, don't bet it. RJ Harvey (DEN), rush yds, at LV, a defense you can run a truck through. Lake 18 vs book 15.5 \u2014 9.1% daylight, over.",
   "redFlags": []
  },
  "00-0040734": {
@@ -4775,7 +4818,7 @@
   ],
   "name": "TreVeyon Henderson",
   "playerId": "00-0040734",
-  "prediction": "Bash the under. The books haven't moved it enough. TreVeyon Henderson (NE), rush yds, at DET, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 9 stinker. Lake 32.5\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. TreVeyon Henderson (NE), rush yds, at DET, an average defense. Lake 32.5 vs book 39.5 \u2014 19.8% daylight, under.",
   "redFlags": []
  },
  "00-0040735": {
@@ -4790,7 +4833,7 @@
   ],
   "name": "Luther Burden III",
   "playerId": "00-0040735",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Luther Burden III (CHI), rec yds, at NO, a defense that brings real resistance. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 55 vs book 46.5\u2026",
+  "prediction": "The only angle here is the over. Luther Burden III (CHI), rec yds, at NO, a defense that brings real resistance. Lake 55 vs book 46.5 \u2014 18.3% daylight, over.",
   "redFlags": []
  },
  "00-0040736": {
@@ -4829,14 +4872,17 @@
   "redFlags": []
  },
  "00-0040743": {
-  "composite": 0.0,
-  "confidence": "low",
+  "composite": 0.246,
+  "confidence": "medium",
   "drivers": [
-   "wrong market"
+   "matchup",
+   "projection",
+   "usage",
+   "red zone"
   ],
   "name": "Tyler Shough",
   "playerId": "00-0040743",
-  "prediction": "No play. Tyler Shough is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "I'm on Tyler Shough over. That's my number. Tyler Shough (NO), rush yds, at CAR, a defense you can run a truck through. 3-for-5 lately. He owes nobody. Lake 19.5 vs book 16.5 \u2014 18.2% daylight, over.",
   "redFlags": []
  },
  "00-0040752": {
@@ -4861,7 +4907,7 @@
   ],
   "name": "Quinshon Judkins",
   "playerId": "00-0040784",
-  "prediction": "Bash the under. The books haven't moved it enough. Quinshon Judkins (CLE), rush yds, at HOU, an elite, legit defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 43 vs book 56.5 \u2014 23.2% dayl\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Quinshon Judkins (CLE), rush yds, at HOU, an elite, legit defense. Lake 43 vs book 56.5 \u2014 23.2% daylight, under.",
   "redFlags": []
  },
  "00-0040867": {
@@ -4907,15 +4953,14 @@
   "redFlags": []
  },
  "00-0040887": {
-  "composite": -0.354,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0040887",
   "playerId": "00-0040887",
-  "prediction": "Lean under. Not a lock. A lean. 00-0040887 (BAL), pass yds, at LAC, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0040899": {
@@ -4930,14 +4975,14 @@
   "redFlags": []
  },
  "00-0040981": {
-  "composite": -0.249,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0040981",
   "playerId": "00-0040981",
-  "prediction": "Lean under. Not a lock. A lean. 00-0040981 (BAL), pass yds, at LAC, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0041013": {
@@ -4952,7 +4997,7 @@
   ],
   "name": "Emmett Johnson",
   "playerId": "00-0041013",
-  "prediction": "Bash the under. The books haven't moved it enough. Emmett Johnson (KC), rush yds, at ATL, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 12 vs book 17.5 \u2014\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Emmett Johnson (KC), rush yds, at ATL, a defense that brings real resistance. Lake 12 vs book 17.5 \u2014 31.4% daylight, under.",
   "redFlags": []
  },
  "00-0041027": {
@@ -4967,7 +5012,7 @@
   ],
   "name": "Jeremiyah Love",
   "playerId": "00-0041027",
-  "prediction": "Bash the under. The books haven't moved it enough. Jeremiyah Love (ARI), rush yds, at LA, a defense that brings real resistance. Putrid \u2014 1-for-5. He's cost you dinner twice. Last week was a 23 sti\u2026",
+  "prediction": "Bash the under. The books haven't moved it enough. Jeremiyah Love (ARI), rush yds, at LA, a defense that brings real resistance. Lake 37.5 vs book 64.5 \u2014 42.7% daylight, under.",
   "redFlags": []
  },
  "00-0041032": {
@@ -4993,7 +5038,7 @@
   ],
   "name": "Denzel Boston",
   "playerId": "00-0041037",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Denzel Boston (CLE), rec yds, at HOU, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 50.5 vs book 37.5 \u2014 34.7% daylight, over.",
+  "prediction": "The only angle here is the over. Denzel Boston (CLE), rec yds, at HOU, an average defense. Putrid \u2014 1-for-5. He's cost you dinner twice. Lake 50.5 vs book 37.5 \u2014 34.7% daylight, over.",
   "redFlags": []
  },
  "00-0041040": {
@@ -5008,7 +5053,7 @@
   ],
   "name": "Antonio Williams",
   "playerId": "00-0041040",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Antonio Williams (WAS), rec yds, at NYG, a defense that brings real resistance. Slaughtered the number 5 of 5 \u2014 he's the ride. Lake 29 vs book 17.5\u2026",
+  "prediction": "The only angle here is the over. Antonio Williams (WAS), rec yds, at NYG, a defense that brings real resistance. Lake 29 vs book 17.5 \u2014 65.7% daylight, over.",
   "redFlags": []
  },
  "00-0041042": {
@@ -5021,7 +5066,7 @@
   ],
   "name": "Malachi Fields",
   "playerId": "00-0041042",
-  "prediction": "Put your neck out \u2014 Malachi Fields's going over. Malachi Fields (NYG), rec yds, at WAS, a defense you can run a truck through. 3-for-5 lately. He owes nobody. Lake 37 vs book 23.5 \u2014 57.4% daylight,\u2026",
+  "prediction": "Put your neck out \u2014 Malachi Fields's going over. Malachi Fields (NYG), rec yds, at WAS, a defense you can run a truck through. Lake 37 vs book 23.5 \u2014 57.4% daylight, over.",
   "redFlags": []
  },
  "00-0041044": {
@@ -5102,26 +5147,25 @@
   "redFlags": []
  },
  "00-0041116": {
-  "composite": 0.147,
+  "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0041116",
   "playerId": "00-0041116",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. 00-0041116 (CIN), pass yds, at PIT, a soft run-fit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0041117": {
-  "composite": -0.231,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup",
-   "usage"
+   "unknown name"
   ],
   "name": "00-0041117",
   "playerId": "00-0041117",
-  "prediction": "Lean under. Not a lock. A lean. 00-0041117 (WAS), pass yds, at NYG, a defense that brings real resistance.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0041125": {
@@ -5175,11 +5219,11 @@
   "composite": 0.0,
   "confidence": "low",
   "drivers": [
-   "wrong market"
+   "unknown name"
   ],
   "name": "00-0041251",
   "playerId": "00-0041251",
-  "prediction": "No play. 00-0041251 is a QB priced out of a rush yds number \u2014 that's a book filler, not a market. Pass.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  },
  "00-0041326": {
@@ -5219,7 +5263,7 @@
   ],
   "name": "Carnell Tate",
   "playerId": "00-0041438",
-  "prediction": "I'm on Carnell Tate over. That's my number. Carnell Tate (TEN), rec yds, at JAX, a defense you can run a truck through. Slaughtered the number 4 of 5 \u2014 he's the ride. Lake 58.5 vs book 42.5 \u2014 37.6%\u2026",
+  "prediction": "I'm on Carnell Tate over. That's my number. Carnell Tate (TEN), rec yds, at JAX, a defense you can run a truck through. Lake 58.5 vs book 42.5 \u2014 37.6% daylight, over.",
   "redFlags": []
  },
  "00-0041489": {
@@ -5295,7 +5339,7 @@
   ],
   "name": "Jadarian Price",
   "playerId": "00-0041512",
-  "prediction": "No payday in this line \u2014 watch it, don't bet it. Jadarian Price (SEA), rush yds, at LV, a defense you can run a truck through. 2-for-5 \u2014 you're coin-flipping. Not a bet. Last week was a 24 stinker.\u2026",
+  "prediction": "The only angle here is the under. Jadarian Price (SEA), rush yds, at LV, a defense you can run a truck through. Lake 29 vs book 39.5 \u2014 30.1% daylight, under.",
   "redFlags": []
  },
  "00-0041523": {
@@ -5351,14 +5395,14 @@
   "redFlags": []
  },
  "00-0041562": {
-  "composite": -0.35,
-  "confidence": "medium",
+  "composite": 0.0,
+  "confidence": "low",
   "drivers": [
-   "matchup"
+   "unknown name"
   ],
   "name": "00-0041562",
   "playerId": "00-0041562",
-  "prediction": "Lean under. Not a lock. A lean. 00-0041562 (LV), pass yds, at SEA, an elite, legit defense.",
+  "prediction": "No read \u2014 this player isn't named in the lake yet. He's a number, not a name. Pass.",
   "redFlags": []
  }
 }
