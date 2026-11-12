@@ -1644,6 +1644,9 @@ def root_landing():
 _DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
 _LANDING_DIR = _LANDING.parent
 
+if _DIST.exists():
+    app.mount("/app", StaticFiles(directory=str(_DIST), html=True), name="frontend")
+
 # ── SLUG REGISTRY ──
 # Unique permanent links for player pages: /p/YYYYMMDDHHMM-<name>-<team>
 # Stored in lake/gold/espn/player_slugs.json so direct URL access works.
@@ -1694,7 +1697,7 @@ def api_slug_resolve(slug: str):
 import datetime as _dt
 import os as _os
 
-_SITEMAP_BASE = _os.environ.get("SITEMAP_BASE_URL", "").rstrip("/") or "https://AIBRUH-big-proppa-live.hf.space"
+_SITEMAP_BASE = _os.environ.get("SITEMAP_BASE_URL", "").rstrip("/") or "http://localhost:8000"
 
 @app.get("/sitemap.xml", include_in_schema=False)
 def sitemap_xml():
@@ -1786,8 +1789,10 @@ def _take_refresher() -> None:
 @app.on_event("startup")
 def _start_take_refresher() -> None:
     import threading as _threading
+    print("Starting app - registering take refresher thread")
     _t = _threading.Thread(target=_take_refresher, daemon=True)
     _t.start()
+    print("Take refresher thread started")
 
 
 # Catch-all: landing assets → dist assets → SPA fallback for BrowserRouter routes
