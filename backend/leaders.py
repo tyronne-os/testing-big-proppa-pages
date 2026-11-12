@@ -71,6 +71,7 @@ CATEGORY_SOURCES = {
     "PASSING": ("player_passing_week", "passing_yards"),
     "SCORING": ("player_scoring_week", "total_points"),
     "FIELD GOALS": ("player_kicking_week", "fg_made"),
+    "TARGETS": ("player_receiving_week", "targets"),
 }
 
 
