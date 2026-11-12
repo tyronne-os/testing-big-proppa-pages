@@ -120,3 +120,17 @@ frontend/node_modules/esbuild/bin/esbuild filter=lfs diff=lfs merge=lfs -text
 .venv/lib/python3.14/site-packages/pandas/_libs/tslibs/timezones.cpython-314-x86_64-linux-gnu.so filter=lfs diff=lfs merge=lfs -text
 .venv/lib/python3.14/site-packages/pandas/_libs/tslibs/tzconversion.cpython-314-x86_64-linux-gnu.so filter=lfs diff=lfs merge=lfs -text
 .venv/lib/python3.14/site-packages/pandas/_libs/window/aggregations.cpython-314-x86_64-linux-gnu.so filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libXau-154567c4.so.6.0.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libavif-c6062d5f.so.16.4.2 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libbrotlicommon-53534446.so.1.2.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libfreetype-57f805ba.so.6.20.6 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libharfbuzz-fb49c9fc.so.0.61450.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libjpeg-6dc8d115.so.62.4.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/liblcms2-88eaba2f.so.2.0.19 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/liblzma-de26b416.so.5.8.4 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libopenjp2-e530e1bf.so.2.5.4 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libpng16-1d1ba958.so.16.58.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libtiff-20b7e810.so.6.3.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libwebp-51b0b3f7.so.7.2.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libxcb-9065bb12.so.1.1.0 filter=lfs diff=lfs merge=lfs -text
+.venv/lib/python3.14/site-packages/pillow.libs/libzstd-40ad5e7e.so.1.5.7 filter=lfs diff=lfs merge=lfs -text
