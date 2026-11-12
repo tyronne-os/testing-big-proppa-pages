@@ -72,6 +72,7 @@ CATEGORY_SOURCES = {
     "SCORING": ("player_scoring_week", "total_points"),
     "FIELD GOALS": ("player_kicking_week", "fg_made"),
     "TARGETS": ("player_receiving_week", "targets"),
+    "COMBO": ("player_rushing_week", "rushing_yards"),  # Will be handled specially
 }
 
 
@@ -172,6 +173,72 @@ def _leaders(category: str) -> dict:
                 }
                 for i, r in enumerate(ranked, start=1)
             ],
+        }
+
+    if category == "COMBO":
+        # COMBO: rushing yards + receiving yards (all-purpose yards)
+        # Load rushing data
+        rushing_rows = data.load("player_rushing_week")
+        receiving_rows = data.load("player_receiving_week")
+        
+        # Combine: create player entries with total all-purpose yards
+        combined = {}
+        
+        # Add rushing yards
+        for r in rushing_rows:
+            pid = r.get("player_id", "")
+            if pid:
+                yards = float(r.get("rushing_yards") or 0)
+                if pid in combined:
+                    combined[pid]["rushing_yards"] = yards
+                else:
+                    combined[pid] = {
+                        "player_id": pid,
+                        "name": r.get("player_name", ""),
+                        "team": r.get("team", ""),
+                        "rushing_yards": yards,
+                        "receiving_yards": 0,
+                        "gp": int(r.get("games") or 0)
+                    }
+        
+        # Add receiving yards
+        for r in receiving_rows:
+            pid = r.get("player_id", "")
+            if pid:
+                yards = float(r.get("receiving_yards") or 0)
+                if pid in combined:
+                    combined[pid]["receiving_yards"] = yards
+                else:
+                    combined[pid] = {
+                        "player_id": pid,
+                        "name": r.get("player_name", ""),
+                        "team": r.get("team", ""),
+                        "rushing_yards": 0,
+                        "receiving_yards": yards,
+                        "gp": int(r.get("games") or 0)
+                    }
+        
+        # Calculate all-purpose yards and rank
+        rows = []
+        for pid, data in combined.items():
+            ap_yards = data["rushing_yards"] + data["receiving_yards"]
+            rows.append({
+                "playerId": pid,
+                "name": data["name"],
+                "team": data["team"],
+                "gp": data["gp"],
+                "value": ap_yards,
+                "rushing_yards": data["rushing_yards"],
+                "receiving_yards": data["receiving_yards"]
+            })
+        
+        # Sort by all-purpose yards descending
+        rows.sort(key=lambda r: r["value"], reverse=True)
+        
+        return {
+            "category": category,
+            "sourceStatus": data.chart_status("player_rushing_week"),
+            "rows": rows[:50]  # Top 50
         }
 
     if category == "DIVISIONS":
