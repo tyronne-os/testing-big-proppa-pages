@@ -442,13 +442,6 @@ def leg_probability(
         if r:
             p = r["p"]
             return round(p if direction == "over" else 1 - p, 3)
-    if hit_rate is None:                       # no recent-form read: fall back to the betterverse prior for this market side
-        try:
-            import jimmy
-            mv = jimmy.betterverse_prior(market_slug, direction)
-            hit_rate = mv["implied"] + mv["prior_edge"] if mv else None
-        except Exception:
-            pass
     return _thin_leg_probability(player_id, name, team, market_slug, direction, line, hit_rate, usage_score, matchup_edge, opponent)
 
 

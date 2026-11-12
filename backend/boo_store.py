@@ -16,9 +16,8 @@ from pathlib import Path
 _GOLD = Path(__file__).parent.parent / "lake/gold/nfl"
 REPO = "AIBRUH/big-proppa-lake"
 FILES = ["myboo_tickets.csv", "myboo_legs.csv", "myboo_thesis.json", "myboo_recaps.json", "myboo_alerts.json", "myboo_counter.txt",
-         "jimmy_lessons.json", "betterverse_priors.json", "inbox.jsonl", "myboo_jev_ledger.jsonl", "myboo_jev_reports.json", "myboo_reports.json", "jev_reads.json"]
+         "jimmy_lessons.json", "myboo_jev_ledger.jsonl", "myboo_jev_reports.json", "myboo_reports.json", "jev_reads.json"]
 TRAIN_DIR = _GOLD / "boo_training"          # the weekly training package (jsonl), batch log and latest report
-_DIRS = {"myboo/boo_curriculum/": "boo_curriculum", "myboo/boo_harvest/": "boo_harvest", "myboo/boo_models/": "boo_models", "myboo/boo_jimmy/": "boo_jimmy"}
 _state = {"last_push": 0.0, "pushes": 0, "last_error": None}
 _lock = threading.Lock()
 
@@ -60,15 +59,6 @@ def pull() -> int:
                 if not dst.exists() or Path(got).stat().st_size > dst.stat().st_size:
                     dst.write_bytes(Path(got).read_bytes())
                     n += 1
-            else:                                             # her curriculum, harvest ledger and trained models
-                for prefix, folder in _DIRS.items():
-                    if rf.startswith(prefix):
-                        got = hf_hub_download(REPO, rf, repo_type="dataset", token=_token())
-                        dst = _GOLD / folder / rf[len(prefix):]
-                        dst.parent.mkdir(parents=True, exist_ok=True)
-                        if not dst.exists() or Path(got).stat().st_size > dst.stat().st_size:
-                            dst.write_bytes(Path(got).read_bytes())
-                            n += 1
     except Exception as e:                         # a mirror problem must never stop the app
         _state["last_error"] = type(e).__name__
     return n
@@ -91,17 +81,3 @@ def push(force: bool = False) -> bool:
         except Exception as e:
             _state["last_error"] = type(e).__name__
             return False
-
-
-def push_dir(local: Path, remote: str) -> bool:
-    """Mirror one folder (e.g. a finished betterverse run) to the dataset in a single commit."""
-    if not enabled() or not local.exists():
-        return False
-    try:
-        from huggingface_hub import CommitOperationAdd, HfApi
-        ops = [CommitOperationAdd(f"{remote}/{p.relative_to(local).as_posix()}", str(p)) for p in local.rglob("*") if p.is_file()]
-        HfApi(token=_token()).create_commit(REPO, ops, repo_type="dataset", commit_message=f"betterverse {local.name}")
-        return True
-    except Exception as e:
-        _state["last_error"] = type(e).__name__
-        return False

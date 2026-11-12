@@ -15,7 +15,7 @@ import os
 import json
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -74,11 +74,6 @@ except Exception:
 try:
     import slip_alerts as _slip_alerts
     _slip_alerts.start_worker()      # polls Tank01 once a minute when a key is configured
-    try:
-        import boo_harvest
-        boo_harvest.start_worker()   # MY BOO's BETTER-VERSE harvester: backfill on boot, then scheduled collection cycles
-    except Exception:
-        pass
 except Exception:
     pass
 
@@ -101,9 +96,11 @@ def api_players_search(q: str = ""):
 
 
 @app.get("/api/chart/player_props")
-def api_player_props(player_id: str, market: str = "rushyds"):
+def api_player_props(player_id: str, market: str = "rushyds", refresh: bool = False):
     if market not in data.PROP_LABELS:
         raise HTTPException(400, f"unknown market '{market}', expected one of {list(data.PROP_LABELS)}")
+    if refresh:
+        data.refresh_data()
     return data.player_prop_chart(player_id, market)
 
 
@@ -518,218 +515,8 @@ def api_canvas_nodes():
                 "sub": boo_sub,
                 "chips": ["SKILL.md", "PROCEDURE.md"],
             },
-            *_betterverse_nodes(),
-        ],
-        "groups": [{"id": "better-verse", "name": "BETTER-VERSE",
-                    "sub": "simulated betters -> proof leaderboard -> MY BOO"}],
-        "edges": [
-            {"source": "ramp-nfl", "target": "bv-bettors"},
-            {"source": "bv-bettors", "target": "bv-sim"},
-            {"source": "bv-sim", "target": "bv-insights"},
-            {"source": "bv-insights", "target": "my-boo"},
-            {"source": "my-boo", "target": "jimmy-the-greek"},
-        ],
+        ]
     }
-
-
-def _betterverse_nodes() -> list[dict]:
-    import boo_training
-    import betterverse_bettors
-    import betterverse_sim
-    runs = betterverse_sim.runs()
-    live = next((r for r in runs if r.get("state") == "running"), None)
-    done = [r for r in runs if r.get("rows")]
-    pri = boo_training.betterverse_priors()
-    sim_sub = (f"running · week {live.get('week') or 1} · {int(100 * live.get('progress', 0))}%" if live
-               else f"{len(done)} seasons simulated" if done else "idle · open the betterverse")
-    ins_sub = (f"{len(pri.get('runs', []))} runs ingested · {len(pri.get('never_won', []))} never-won shapes"
-               if pri else "nothing sent to MY BOO yet")
-    return [
-        {"id": "bv-bettors", "type": "sim", "group": "better-verse", "name": "THE BETTERS",
-         "sub": f"{len(betterverse_bettors.ARCHETYPES)} styles · sharp to degen · FD/DK legal", "chips": ["personas"]},
-        {"id": "bv-sim", "type": "sim", "group": "better-verse", "name": "SEASON ENGINE",
-         "sub": sim_sub, "chips": ["2023", "2024", "2025"]},
-        {"id": "bv-insights", "type": "sim", "group": "better-verse", "name": "SLIP INTELLIGENCE",
-         "sub": ins_sub, "chips": ["parquet", "priors"]},
-    ]
-
-
-# ---------------------------------------------------------------------------- BETTER-VERSE
-# ---------------------------------------------------------------------------- Contact Us + waitlist inbox
-def _client_ip(request: Request) -> str:
-    fwd = request.headers.get("x-forwarded-for", "")
-    return (fwd.split(",")[0].strip() if fwd else (request.client.host if request.client else "unknown")) or "unknown"
-
-
-async def _inbox(kind: str, request: Request):
-    import inbox
-    try:
-        body = await request.json()
-    except Exception:
-        raise HTTPException(400, "Send the form as JSON.")
-    try:
-        return inbox.submit(kind, body if isinstance(body, dict) else {}, _client_ip(request))
-    except inbox.InboxError as e:
-        raise HTTPException(429 if "Too many" in str(e) else 400, str(e))
-
-
-@app.post("/api/contact")
-async def api_contact(request: Request):
-    return await _inbox("contact", request)
-
-
-@app.post("/api/waitlist")
-async def api_waitlist(request: Request):
-    return await _inbox("waitlist", request)
-
-
-@app.get("/api/inbox/health")
-def api_inbox_health():
-    import inbox
-    return inbox.health()
-
-
-@app.get("/api/betterverse/archetypes")
-def api_mv_archetypes():
-    import betterverse_bettors
-    return {k: {kk: (sorted(v) if isinstance(v, set) else v) for kk, v in a.items()}
-            for k, a in betterverse_bettors.ARCHETYPES.items()}
-
-
-@app.post("/api/betterverse/run")
-async def api_mv_run(request: Request):
-    import betterverse_sim
-    body = await request.json() if (await request.body()) else {}
-    season = int(body.get("season", 2024))
-    if season not in (2023, 2024, 2025):
-        raise HTTPException(400, "season must be 2023, 2024 or 2025")
-    n = max(10, min(2000, int(body.get("bettors", 150))))
-    seed = int(body.get("seed", 7))
-    mix = {k: float(v) for k, v in (body.get("mix") or {}).items() if float(v) >= 0} or None
-    return betterverse_sim.start(season, n, seed, mix)
-
-
-@app.get("/api/betterverse/status/{run_id}")
-def api_mv_status(run_id: str):
-    import betterverse_sim
-    return betterverse_sim.status(run_id)
-
-
-@app.get("/api/betterverse/runs")
-def api_mv_runs():
-    import betterverse_sim
-    return {"runs": betterverse_sim.runs()}
-
-
-@app.get("/api/betterverse/insights/{run_id}")
-def api_mv_insights(run_id: str):
-    import betterverse_sim
-    ins = betterverse_sim.load_insights(run_id)
-    if ins is None:
-        raise HTTPException(404, "run not found")
-    return ins
-
-
-@app.post("/api/betterverse/study")
-async def api_bv_study(request: Request):
-    import betterverse_study
-    body = await request.json() if (await request.body()) else {}
-    seasons = sorted({int(y) for y in body.get("seasons", [2023, 2024, 2025]) if int(y) in (2023, 2024, 2025)})
-    if not seasons:
-        raise HTTPException(400, "seasons must include 2023, 2024 and/or 2025")
-    return betterverse_study.start(max(2, min(60, int(body.get("universes", 20)))), max(20, min(500, int(body.get("bettors", 150)))),
-                                   int(body.get("seed", 100)), seasons)
-
-
-@app.get("/api/betterverse/studies")
-def api_bv_studies():
-    import betterverse_study
-    return {"studies": betterverse_study.studies()}
-
-
-@app.get("/api/betterverse/study/status/{study_id}")
-def api_bv_study_status(study_id: str):
-    import betterverse_study
-    return betterverse_study.status(study_id)
-
-
-@app.get("/api/betterverse/compare")
-def api_bv_compare(a: str, b: str):
-    import betterverse_study
-    c = betterverse_study.compare(a, b)
-    if c is None:
-        raise HTTPException(404, "study not found")
-    return c
-
-
-@app.get("/api/betterverse/study/{study_id}")
-def api_bv_study_get(study_id: str):
-    import betterverse_study
-    s = betterverse_study.load(study_id)
-    if s is None:
-        raise HTTPException(404, "study not found")
-    return s
-
-
-@app.get("/api/betterverse/study/{study_id}/obsidian")
-def api_bv_study_obsidian(study_id: str):
-    import betterverse_obsidian
-    import betterverse_study
-    from fastapi.responses import Response
-    s = betterverse_study.load(study_id)
-    if s is None:
-        raise HTTPException(404, "study not found")
-    return Response(betterverse_obsidian.zip_bytes(s), media_type="application/zip",
-                    headers={"Content-Disposition": f'attachment; filename="{study_id}-obsidian-vault.zip"'})
-
-
-@app.post("/api/betterverse/study/{study_id}/ingest")
-def api_bv_study_ingest(study_id: str):
-    """Send a Strategy Lab study to MY BOO: priors for JIMMY/JEV, evidence for her training curriculum, and a new release if anything changed."""
-    import boo_curriculum
-    import boo_training
-    try:
-        b = boo_training.ingest_betterverse_study(study_id)
-        boo_curriculum.ingest_study(study_id)
-    except FileNotFoundError:
-        raise HTTPException(404, "study not found")
-    rel = boo_curriculum.cut_release(trigger="study")
-    return {"ok": True, "money_makers": len(b["proven_money_makers"]), "money_losers": len(b["proven_money_losers"]), "curriculum": rel}
-
-
-@app.get("/api/betterverse/career")
-def api_bv_career(runs: str):
-    import betterverse_sim
-    c = betterverse_sim.career([r for r in runs.split(",") if r])
-    if c is None:
-        raise HTTPException(404, "runs not found or not the same betters")
-    return c
-
-
-@app.get("/api/betterverse/bettor/{run_id}/{bettor_id}")
-def api_mv_bettor(run_id: str, bettor_id: int):
-    import betterverse_sim
-    b = betterverse_sim.bettor(run_id, bettor_id)
-    if b is None:
-        raise HTTPException(404, "bettor not found")
-    return b
-
-
-@app.post("/api/betterverse/ingest/{run_id}")
-def api_mv_ingest(run_id: str):
-    import boo_training
-    try:
-        p = boo_training.ingest_betterverse(run_id)
-    except FileNotFoundError:
-        raise HTTPException(404, "run not found")
-    return {"ok": True, "runs": p["runs"], "markets": len(p["markets"]), "never_won": len(p["never_won"]),
-            "best_shapes": p["best_shapes"][:5]}
-
-
-@app.get("/api/betterverse/priors")
-def api_mv_priors():
-    import boo_training
-    return boo_training.betterverse_priors()
 
 
 @app.get("/api/myboo/agent")
@@ -1134,120 +921,6 @@ def api_high_production(game_id: str):
     if not hp:
         raise HTTPException(404, "no high-production log for this game")
     return {k: v for k, v in hp.items() if k not in ("players", "box")}
-
-
-# ---------------------------------------------------------------------------- MY BOO training curriculum (itemized releases)
-# ---------------------------------------------------------------------------- MY BOO harvester + in-house JEV training
-def _harvest_auth(request: Request) -> None:
-    import hmac
-    tok = os.environ.get("HARVEST_TOKEN", "")
-    if not tok:
-        raise HTTPException(503, "HARVEST_TOKEN is not set on this server, so remote triggers are disabled")
-    if not hmac.compare_digest(request.headers.get("x-harvest-token", ""), tok):
-        raise HTTPException(403, "bad token")
-
-
-@app.get("/api/myboo/harvest/status")
-def api_harvest_status():
-    import boo_harvest
-    return boo_harvest.status()
-
-
-@app.post("/api/myboo/harvest/cycle")
-def api_harvest_cycle(request: Request):
-    """Run one harvest cycle in the background. Called by the scheduled GitHub Action (wakes a sleeping Space)."""
-    import threading
-    import boo_harvest
-    _harvest_auth(request)
-    threading.Thread(target=boo_harvest.cycle, kwargs={"reason": "external"}, daemon=True, name="harvest-external").start()
-    return {"started": True}
-
-
-@app.post("/api/myboo/harvest/backfill")
-def api_harvest_backfill(request: Request):
-    import boo_harvest
-    _harvest_auth(request)
-    return boo_harvest.backfill()
-
-
-@app.get("/api/myboo/jev-model")
-def api_jev_model():
-    import boo_jev_trainer
-    return boo_jev_trainer.status()
-
-
-@app.post("/api/myboo/jev-model/train")
-def api_jev_model_train(request: Request):
-    import threading
-    import boo_jev_trainer
-    _harvest_auth(request)
-    threading.Thread(target=boo_jev_trainer.train, daemon=True, name="jev-train").start()
-    return {"started": True}
-
-
-@app.get("/api/myboo/curriculum/{release}/sft.jsonl")
-def api_curriculum_sft(release: str):
-    import boo_jev_trainer
-    from fastapi.responses import PlainTextResponse
-    t = boo_jev_trainer.curriculum_sft(release)
-    if t is None:
-        raise HTTPException(404, "release not found")
-    return PlainTextResponse(t, media_type="application/x-ndjson", headers={"Content-Disposition": f'attachment; filename="boo-sft-{release}.jsonl"'})
-
-
-@app.get("/api/myboo/curriculum")
-def api_curriculum():
-    import boo_curriculum
-    cur = boo_curriculum.current_rows()
-    return {"index": boo_curriculum.index(), "latest": boo_curriculum.latest(),
-            "evidence": [{k: r.get(k) for k in ("study_id", "seasons", "universes", "bettors_per_universe", "bettor_seasons", "slips", "ingested")} for r in cur],
-            "superseded": len(boo_curriculum._evidence_rows()) - len(cur)}
-
-
-@app.get("/api/myboo/curriculum/{release}")
-def api_curriculum_release(release: str):
-    import boo_curriculum
-    r = boo_curriculum.get(release)
-    if r is None:
-        raise HTTPException(404, "release not found")
-    return r
-
-
-@app.get("/api/myboo/curriculum/{release}/notes")
-def api_curriculum_notes(release: str):
-    import boo_curriculum
-    from fastapi.responses import PlainTextResponse
-    t = boo_curriculum.notes(release)
-    if t is None:
-        raise HTTPException(404, "release not found")
-    return PlainTextResponse(t, media_type="text/markdown")
-
-
-@app.get("/api/myboo/curriculum/{release}/training.jsonl")
-def api_curriculum_training(release: str):
-    import boo_curriculum
-    from fastapi.responses import PlainTextResponse
-    t = boo_curriculum.training_rows(release)
-    if t is None:
-        raise HTTPException(404, "release not found")
-    return PlainTextResponse(t, media_type="application/x-ndjson",
-                             headers={"Content-Disposition": f'attachment; filename="boo-curriculum-{release}.jsonl"'})
-
-
-@app.post("/api/myboo/curriculum/ingest/{study_id}")
-def api_curriculum_ingest(study_id: str):
-    import boo_curriculum
-    try:
-        got = boo_curriculum.ingest_study(study_id)
-    except FileNotFoundError:
-        raise HTTPException(404, "study not found")
-    return {"ingested": got, "release": boo_curriculum.cut_release(trigger="study")}
-
-
-@app.post("/api/myboo/curriculum/release")
-def api_curriculum_cut(force: bool = False):
-    import boo_curriculum
-    return boo_curriculum.cut_release(trigger="manual", force=force)
 
 
 @app.get("/api/myboo/training")
@@ -1947,282 +1620,6 @@ def api_matchup(game_id: str | None = None, day: str = "thursday"):
                                                 info.get("away_qb_name", ""), info.get("home_qb_name", ""))}
 
 
-@app.get("/api/jimmy/seasons")
-def api_jimmy_seasons():
-    return {"seasons": [2024, 2025]}
-
-
-def _jimmy(sid: str):
-    from jimmy_backtester import get_session
-    bt = get_session(sid)
-    if bt is None:
-        raise HTTPException(404, "Season not found. Start a new one.")
-    return bt
-
-
-@app.post("/api/jimmy/start")
-def api_jimmy_start(year: int, slips_per_week: int):
-    from jimmy_backtester import new_session
-    if year not in (2024, 2025):
-        raise HTTPException(400, "Only 2024 and 2025 supported")
-    if not 1 <= slips_per_week <= 5:
-        raise HTTPException(400, "Must select 1-5 slips per week")
-    sid, bt = new_session(year, slips_per_week)
-    return {"session_id": sid, **bt.get_state_dict()}
-
-
-@app.get("/api/jimmy/share/{sid}/{week}")
-def api_jimmy_share(sid: str, week: int, request: Request):
-    """A 1200x630 PNG of the week: Play of the Week, bankroll, booth record."""
-    import booth_share
-    from fastapi.responses import Response
-    from jimmy_recap import generate_weekly_recap
-    recap = generate_weekly_recap(_jimmy(sid), week)
-    if recap.get("error") or not recap.get("segments"):
-        raise HTTPException(400, recap.get("error") or "Nothing to share yet")
-    site = request.url.netloc or "Big Proppa"
-    png = booth_share.render(recap, recap["storylines"]["bankroll"]["now"], site)
-    return Response(png, media_type="image/png", headers={"Cache-Control": "no-store"})
-
-
-@app.get("/api/jimmy/hosts")
-def api_jimmy_hosts():
-    """Which booth hosts have a photo, as site-relative URLs (null = show initials)."""
-    import booth_hosts
-    return booth_hosts.photo_urls()
-
-
-@app.post("/api/jimmy/restore")
-def api_jimmy_restore(body: dict):
-    """Rebuild a season lost to a redeploy by replaying the action log the browser saved."""
-    from jimmy_backtester import restore
-    year, per_week = int(body.get("year") or 0), int(body.get("slips_per_week") or 0)
-    if year not in (2024, 2025) or not 1 <= per_week <= 5:
-        raise HTTPException(400, "Bad season")
-    try:
-        sid, bt = restore(year, per_week, body.get("log") or [])
-    except (ValueError, KeyError, TypeError) as e:
-        raise HTTPException(400, f"Could not replay that season: {e}")
-    return {"session_id": sid, **bt.get_state_dict()}
-
-
-@app.get("/api/jimmy/session/{sid}")
-def api_jimmy_session(sid: str):
-    return {"session_id": sid, **_jimmy(sid).get_state_dict()}
-
-
-@app.get("/api/jimmy/board/{sid}")
-def api_jimmy_board(sid: str):
-    import jimmy_history
-    bt = _jimmy(sid)
-    return {"week": bt.state.current_week, "props": jimmy_history.board(bt.year, bt.state.current_week)}
-
-
-def _jimmy_live(bt, sid: str) -> None:
-    """When a season ends, record its result against the MY BOO training update that was live, so update impact can be tracked."""
-    if bt.state.game_over and not getattr(bt, "_live_recorded", False):
-        bt._live_recorded = True
-        try:
-            import jimmy_updates
-            jimmy_updates.record_live(bt.year, [bt._serialize_slip(x) for x in bt.state.slips], round(bt.state.bankroll, 2),
-                                      getattr(bt, "policy_version", "JU-0000"), sid)
-        except Exception:
-            pass
-
-
-@app.get("/api/jimmy/recommend/{sid}")
-def api_jimmy_recommend(sid: str):
-    """JIMMY's own slip for this week under the training policy MY BOO has sent him (what auto-play bets)."""
-    import jimmy_history
-    import jimmy_updates
-    bt = _jimmy(sid)
-    wk = bt.state.current_week
-    used = {l.player_id for s in bt.week_slips() for l in s.legs}
-    cur = jimmy_updates.current()
-    legs = jimmy_updates.pick(list(jimmy_history.board(bt.year, wk)), cur["policy"], used)
-    return {"week": wk, "version": cur["version"], "policy": cur["policy"], "legs": legs}
-
-
-@app.get("/api/jimmy/updates")
-def api_jimmy_updates():
-    import jimmy_updates
-    return jimmy_updates.status()
-
-
-@app.post("/api/jimmy/updates/send")
-def api_jimmy_updates_send(force: bool = False):
-    """The one button: package MY BOO's training data, test every item out of sample, and send JIMMY a numbered update."""
-    import jimmy_updates
-    return jimmy_updates.send_to_jimmy(trigger="button", force=force)
-
-
-@app.get("/api/jimmy/updates/{uid}")
-def api_jimmy_update(uid: str):
-    import jimmy_updates
-    u = jimmy_updates.get_update(uid)
-    if u is None:
-        raise HTTPException(404, "update not found")
-    return u
-
-
-@app.get("/api/jimmy/updates/{uid}/notes")
-def api_jimmy_update_notes(uid: str):
-    import jimmy_updates
-    from fastapi.responses import PlainTextResponse
-    t = jimmy_updates.update_notes(uid)
-    if t is None:
-        raise HTTPException(404, "update not found")
-    return PlainTextResponse(t, media_type="text/markdown")
-
-
-@app.get("/api/jimmy/updates/{uid}/items.jsonl")
-def api_jimmy_update_items(uid: str):
-    import jimmy_updates
-    from fastapi.responses import PlainTextResponse
-    t = jimmy_updates.update_rows(uid)
-    if t is None:
-        raise HTTPException(404, "update not found")
-    return PlainTextResponse(t, media_type="application/x-ndjson", headers={"Content-Disposition": f'attachment; filename="jimmy-update-{uid}-items.jsonl"'})
-
-
-@app.post("/api/jimmy/submit/{sid}")
-def api_jimmy_submit(sid: str, body: dict):
-    import jimmy_history
-    from jimmy_backtester import Leg
-    bt = _jimmy(sid)
-    legs = []
-    for l in body.get("legs") or []:
-        if l.get("prop_type") not in jimmy_history.PROPS:
-            raise HTTPException(400, "Unknown prop type")
-        meta = jimmy_history.player(bt.year, str(l.get("player_id")))
-        legs.append(Leg(str(l["player_id"]), meta["name"], str(l.get("team") or meta["team"]), l["prop_type"],
-                        float(l["line"]), bool(l.get("is_over", True)), float(l.get("confidence", 50)) / 100,
-                        headshot=meta["headshot"]))
-    try:
-        slip = bt.submit_slip(legs)
-    except ValueError as e:
-        raise HTTPException(400, str(e))
-    _jimmy_live(bt, sid)
-    return {"slip": bt._serialize_slip(slip), "state": {"session_id": sid, **bt.get_state_dict()}}
-
-
-@app.get("/api/jimmy/recap/{sid}/{week}")
-def api_jimmy_recap(sid: str, week: int):
-    from jimmy_recap import generate_weekly_recap
-    return generate_weekly_recap(_jimmy(sid), week)
-
-
-@app.post("/api/jimmy/tail/{sid}")
-def api_jimmy_tail(sid: str, body: dict):
-    bt = _jimmy(sid)
-    try:
-        bt.tail(str(body.get("host")))
-    except ValueError as e:
-        raise HTTPException(400, str(e))
-    return {"session_id": sid, **bt.get_state_dict()}
-
-
-@app.post("/api/jimmy/advance/{sid}")
-def api_jimmy_advance(sid: str):
-    bt = _jimmy(sid)
-    try:
-        bt.advance_week()
-    except ValueError as e:
-        raise HTTPException(400, str(e))
-    _jimmy_live(bt, sid)
-    return {"session_id": sid, **bt.get_state_dict()}
-
-
-@app.post("/api/jimmy/booth/prewarm/{sid}/{week}")
-def api_jimmy_booth_prewarm(sid: str, week: int):
-    """Synthesize a week's whole conversation in the background so playback never waits on the model."""
-    import threading
-    import booth_voice
-    from jimmy_recap import generate_weekly_recap
-    recap = generate_weekly_recap(_jimmy(sid), week)
-    turns = recap.get("turns") or []
-
-    def run():
-        for t in turns:
-            try:
-                booth_voice.clip(t["speaker"], t["text"])
-            except booth_voice.VoiceUnavailable:
-                return
-
-    threading.Thread(target=run, daemon=True).start()
-    return {"week": week, "turns": len(turns), "status": "warming"}
-
-
-_VIDEO_JOBS: dict[tuple[str, int], dict] = {}
-
-
-def _video_path(sid: str, week: int):
-    import tempfile
-    from pathlib import Path
-    return Path(os.environ.get("BOOTH_VIDEO_CACHE", Path(tempfile.gettempdir()) / "jimmy_booth_video")) / f"{sid}_{week}.mp4"
-
-
-@app.post("/api/jimmy/video/{sid}/{week}")
-def api_jimmy_video_start(sid: str, week: int):
-    """Render the week's recap as an MP4 in the background (studio voices, theme bed, on-screen cards)."""
-    import threading
-    import booth_video
-    import booth_voice
-    from jimmy_recap import generate_weekly_recap
-    key = (sid, week)
-    out = _video_path(sid, week)
-    if out.exists():
-        return {"status": "ready"}
-    if _VIDEO_JOBS.get(key, {}).get("status") == "rendering":
-        return {"status": "rendering"}
-    recap = generate_weekly_recap(_jimmy(sid), week)
-    if not recap.get("turns"):
-        raise HTTPException(400, recap.get("error") or "Nothing to render yet")
-    _VIDEO_JOBS[key] = {"status": "rendering"}
-
-    def run():
-        try:
-            booth_video.render(recap, booth_voice.clip, out)
-            _VIDEO_JOBS[key] = {"status": "ready"}
-        except Exception as e:  # noqa: BLE001 -- surfaced to the player as a failed render
-            _VIDEO_JOBS[key] = {"status": "failed", "error": str(e)[:300]}
-
-    threading.Thread(target=run, daemon=True).start()
-    return {"status": "rendering"}
-
-
-@app.get("/api/jimmy/video/{sid}/{week}/status")
-def api_jimmy_video_status(sid: str, week: int):
-    if _video_path(sid, week).exists():
-        return {"status": "ready"}
-    return _VIDEO_JOBS.get((sid, week), {"status": "none"})
-
-
-@app.get("/api/jimmy/video/{sid}/{week}/file")
-def api_jimmy_video_file(sid: str, week: int):
-    from fastapi.responses import FileResponse
-    path = _video_path(sid, week)
-    if not path.exists():
-        raise HTTPException(404, "Video not rendered yet")
-    return FileResponse(str(path), media_type="video/mp4", filename=f"big-proppa-booth-week-{week}.mp4")
-
-
-@app.post("/api/jimmy/voice")
-def api_jimmy_voice(body: dict):
-    """One booth line as WAV. Cached by host and text, so replays cost nothing."""
-    import booth_voice
-    from fastapi.responses import FileResponse
-    text = str(body.get("text") or "").strip()[:600]
-    host = str(body.get("host") or "")
-    if not text or host not in booth_voice.VOICES:
-        raise HTTPException(400, "Need a booth host and a line of text")
-    try:
-        path = booth_voice.clip(host, text)
-    except booth_voice.VoiceUnavailable as e:
-        raise HTTPException(503, str(e))
-    return FileResponse(str(path), media_type="audio/wav", headers={"Cache-Control": "public, max-age=86400"})
-
-
 # React app still accessible at /app/* via the StaticFiles mount below.
 from fastapi.responses import FileResponse as _FileResponse
 
@@ -2245,6 +1642,69 @@ def root_landing():
 # using the Vite dev server directly, so this mount is a no-op unless dist/ actually exists.
 _DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
 _LANDING_DIR = _LANDING.parent
+
+# ── SLUG REGISTRY ──
+# Unique permanent links for player pages: /p/YYYYMMDDHHMM-<name>-<team>
+# Stored in lake/gold/espn/player_slugs.json so direct URL access works.
+_SLUGS_FILE = Path(__file__).resolve().parent.parent / "lake" / "gold" / "espn" / "player_slugs.json"
+_SLUGS_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+
+def _load_slugs() -> dict[str, dict]:
+    try:
+        return json.loads(_SLUGS_FILE.read_text())
+    except Exception:
+        return {}
+
+
+def _save_slugs(slugs: dict[str, dict]) -> None:
+    _SLUGS_FILE.write_text(json.dumps(slugs, indent=2))
+
+
+@app.post("/api/slug/register")
+def api_slug_register(slug: str, player_id: str, market: str = "rushyds", name: str = "", team: str = ""):
+    slugs = _load_slugs()
+    slugs[slug] = {"player_id": player_id, "market": market, "name": name, "team": team}
+    _save_slugs(slugs)
+    return {"ok": True, "slug": slug}
+
+
+@app.get("/api/slug/resolve/{slug}")
+def api_slug_resolve(slug: str):
+    slugs = _load_slugs()
+    entry = slugs.get(slug)
+    if not entry:
+        raise HTTPException(404, f"unknown slug {slug}")
+    return entry
+
+
+# Every player page ever generated, as a crawlable sitemap: one folder (/p/) full of links.
+import datetime as _dt
+
+@app.get("/sitemap.xml", include_in_schema=False)
+def sitemap_xml():
+    base = str(_dt.datetime.now(_dt.timezone.utc).date())
+    slugs = _load_slugs()
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for slug, e in sorted(slugs.items()):
+        name = e.get("name") if isinstance(e, dict) else ""
+        lines.append(
+            f"<url><loc>/p/{slug}</loc><lastmod>{base}</lastmod><changefreq>weekly</changefreq>"
+            + (f"<comment>{name}</comment>" if name else "")
+            + "</url>"
+        )
+    lines.append("</urlset>")
+    from fastapi import Response as _Resp
+    return _Resp(content="\n".join(lines), media_type="application/xml")
+
+
+@app.get("/api/slug/list")
+def api_slug_list():
+    return {"count": len(_load_slugs()), "slugs": _load_slugs()}
+
 
 # Catch-all: landing assets → dist assets → SPA fallback for BrowserRouter routes
 @app.get("/{full_path:path}")

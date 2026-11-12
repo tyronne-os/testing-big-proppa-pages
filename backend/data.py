@@ -79,7 +79,20 @@ def _cached_csv(name: str, _version: int) -> list[dict]:
     return _read_csv(name)
 
 
-_VERSION = 0  # bump to invalidate the cache (not needed -- data is static per session)
+_VERSION = 0  # bump to invalidate the cache
+
+
+def refresh_data() -> int:
+    """Bump the cache version to invalidate all @lru_cache CSV loads.
+
+    Call this when new data has landed from ESPN / the lake ETL so every
+    player stat page picks up breaking news, line moves, and box-score updates
+    on the next render. Returns the new version number.
+    """
+    global _VERSION
+    _VERSION += 1
+    _cached_csv.cache_clear()
+    return _VERSION
 
 
 def load(name: str) -> list[dict]:
@@ -383,6 +396,14 @@ def player_prop_chart(player_id: str, market_slug: str) -> dict:
 
     import bpl
     official = bpl.nfl_player_line(player_id, market_slug, name, team) if market_slug in bpl.NFL_MARKETS else None
+    # The teammate ranking in the SAME category he is being viewed under -- his own
+    # room, so a single number can be read against the competition for the ball.
+    try:
+        import team_rank
+        room = team_rank.team_rank(player_id, market_slug)
+    except Exception:
+        room = {"market": market_slug, "label": "", "sourceStatus": "error", "team": team, "rows": [],
+                "viewerRank": None, "viewer": None}
     return {
         "playerId": player_id,
         "name": name,
@@ -392,6 +413,7 @@ def player_prop_chart(player_id: str, market_slug: str) -> dict:
         "trust": player_trust(player_id),
         "fantasy": _fantasy(player_id),
         "targets": _targets(player_id),
+        "teamRank": room,
         "prop": PROP_LABELS.get(market_slug, market_slug),
         "marketSlug": market_slug,
         "line": line,
