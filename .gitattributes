@@ -54,3 +54,4 @@ frontend/public/my-boo.png filter=lfs diff=lfs merge=lfs -text
 frontend/public/myboo-avatar.jpg filter=lfs diff=lfs merge=lfs -text
 frontend/public/myboo-avatar2.jpg filter=lfs diff=lfs merge=lfs -text
 frontend/node_modules/.bin/esbuild filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/@esbuild/linux-x64/bin/esbuild filter=lfs diff=lfs merge=lfs -text
