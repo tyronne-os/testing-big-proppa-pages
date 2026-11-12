@@ -56,3 +56,5 @@ frontend/public/myboo-avatar2.jpg filter=lfs diff=lfs merge=lfs -text
 frontend/node_modules/.bin/esbuild filter=lfs diff=lfs merge=lfs -text
 frontend/node_modules/@esbuild/linux-x64/bin/esbuild filter=lfs diff=lfs merge=lfs -text
 frontend/node_modules/@napi-rs/lzma-linux-x64-gnu/lzma.linux-x64-gnu.node filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/@rollup/rollup-linux-x64-gnu/rollup.linux-x64-gnu.node filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/@rollup/rollup-linux-x64-musl/rollup.linux-x64-musl.node filter=lfs diff=lfs merge=lfs -text
